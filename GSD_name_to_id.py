@@ -1,8 +1,9 @@
 import gsd.hoomd
-
-import camera_set
 import final_frame_id_lock
 import typeID_changer
+
+read_in_gsd = "modifiable_UNC_gsd.gsd"
+output_gsd = "clone_of_modifile.gsd"
 
 if __name__ == '__main__':
     print("started")
@@ -12,7 +13,7 @@ if __name__ == '__main__':
     box_dim = 361.8006286621094
 
     # Read in the file with the intent to name
-    with gsd.hoomd.open(name="modifiable_UNC_gsd.gsd", mode="r") as file:
+    with gsd.hoomd.open(name=read_in_gsd, mode="r") as file:
 
         # Give Each Particle a Name
         for frame_index, frame in enumerate(file):
@@ -20,7 +21,7 @@ if __name__ == '__main__':
                 particle_names = final_frame_id_lock.particle_namer(frame)
 
         # Create a new GSD file for writing and set typeid given name
-        with gsd.hoomd.open(name="clone_of_modifile.gsd", mode="w") as modified_file:
+        with gsd.hoomd.open(name=output_gsd, mode="w") as modified_file:
 
             # Looping through and update typeID to reflect name
             for frame_index, frame in enumerate(file):
