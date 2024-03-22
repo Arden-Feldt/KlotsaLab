@@ -9,3 +9,10 @@ def particle_namer(frame):
         # Store the particle name in the dictionary
         particle_names[particle_idx] = particle_name
     return particle_names
+
+#create a binging method
+def binning_method(frame, bin_size):
+    for particle_idx in range(frame.particles.N):
+        print(particle_idx)
+    return "binned asf"
+
