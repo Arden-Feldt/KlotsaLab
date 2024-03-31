@@ -24,10 +24,10 @@ if __name__ == '__main__':
                     else:
                         particle_pos[0] = (particle_pos[0] - half_step)
 
-                    #if particle_pos[1] < 0:
-                    #    particle_pos[1] = (particle_pos[1] + half_step)
-                    #else:
-                    #    particle_pos[1] = (particle_pos[1] - half_step)
+                    if particle_pos[1] <= half_step:
+                        particle_pos[1] = (particle_pos[1] + (half_step / 2))
+                    else:
+                        particle_pos[1] = (particle_pos[1] - (3 / 2 * half_step))
 
             # Update the positions of particles in the frame
                 frame.particles.position[:] = particle_positions
