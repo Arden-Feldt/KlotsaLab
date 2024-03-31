@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="Added binning shell" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
@@ -21,6 +35,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.GSD_name_to_id.executor": "Run",
+    "Python.camera_set.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
@@ -41,6 +57,55 @@
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit - Unsure which version of name_to_id im currently running">
+      <option name="closed" value="true" />
+      <created>1710785098989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710785098989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created files and methods to clean up main code block">
+      <option name="closed" value="true" />
+      <created>1711037775751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711037775751</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Broken Camera Setting code">
+      <option name="closed" value="true" />
+      <created>1711043040475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711043040475</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updating math logic for camera setting (still broke)&#10;Cleaned up some code">
+      <option name="closed" value="true" />
+      <created>1711137066332</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711137066332</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added binning shell">
+      <option name="closed" value="true" />
+      <created>1711143027213</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711143027213</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit - Unsure which version of name_to_id im currently running" />
+    <MESSAGE value="Created files and methods to clean up main code block" />
+    <MESSAGE value="Broken Camera Setting code" />
+    <MESSAGE value="Updating math logic for camera setting (still broke)&#10;Cleaned up some code" />
+    <MESSAGE value="Added binning shell" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added binning shell" />
   </component>
 </project>
