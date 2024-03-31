@@ -18,7 +18,12 @@ if __name__ == '__main__':
         # Give Each Particle a Name
         for frame_index, frame in enumerate(file):
             if frame_index == 349:
-                particle_names = final_frame_id_lock.particle_namer(frame)
+                # testing my binning funct:
+                num_bins = 16
+                bin_list = final_frame_id_lock.create_bin_list(num_bins)
+                particle_names = final_frame_id_lock.binning_method(frame, num_bins, box_dim, bin_list)
+                # For a 50/50 split:
+                # particle_names = final_frame_id_lock.particle_namer(frame)
 
         # Create a new GSD file for writing and set typeid given name
         with gsd.hoomd.open(name=output_gsd, mode="w") as modified_file:
@@ -28,5 +33,4 @@ if __name__ == '__main__':
                 # Write the modified frame to the new GSD file
                 modified_file.append(typeID_changer.id_update(frame, particle_names))
 
-    print(particle_names)
     print("finished")
