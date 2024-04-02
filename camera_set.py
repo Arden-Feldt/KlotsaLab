@@ -29,7 +29,10 @@ if __name__ == '__main__':
                     else:
                         particle_pos[1] = (particle_pos[1] - (3 / 2 * half_step))
 
-            # Update the positions of particles in the frame
+                    if particle_pos[1] >= half_step:
+                        particle_pos[1] = particle_pos[1] - (2 * half_step)
+
+                # Update the positions of particles in the frame
                 frame.particles.position[:] = particle_positions
 
                 modified_file.append(frame)
