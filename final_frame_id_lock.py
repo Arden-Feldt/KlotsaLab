@@ -22,8 +22,10 @@ def binning_method(frame, num_bins, box_dim, highlight_bin_list):
 
         for x in np.arange(-box_dim/2, box_dim/2, box_dim / num_bins):
             for y in np.arange(-box_dim/2, box_dim/2, box_dim / num_bins):
+                # check to see if particle is in current bin
                 if x <= particle_position[0] < x + box_dim / num_bins and y <= \
                         particle_position[1] < y + box_dim / num_bins:
+                    # name particle given on if bin is in binlist
                     particle_name = 1 if current_bin in highlight_bin_list else 0
                     # Store the particle name in the dictionary
                     particle_names[particle_idx] = particle_name
