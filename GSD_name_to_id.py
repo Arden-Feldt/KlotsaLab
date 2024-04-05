@@ -19,7 +19,7 @@ if __name__ == '__main__':
         for frame_index, frame in enumerate(file):
             if frame_index == 349:
                 # testing my binning funct:
-                num_bins = 16
+                num_bins = 100
                 bin_list = final_frame_id_lock.create_bin_list(num_bins)
                 particle_names = final_frame_id_lock.binning_method(frame, num_bins, box_dim, bin_list)
                 # For a 50/50 split:

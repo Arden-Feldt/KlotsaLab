@@ -1,4 +1,5 @@
 def id_update(frame, particle_names):
+    """"""
     for particle_index in range(frame.particles.N):
         # Retrieve the particle name from the dictionary
         particle_name = particle_names.get(particle_index)

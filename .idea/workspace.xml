@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="camera setting works and centers NL's gsd">
-      <change afterPath="$PROJECT_DIR$/gsd_populator.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="populator - didn't solve MAIN issue">
+      <change afterPath="$PROJECT_DIR$/read_in_image_to_bin_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GSD_name_to_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSD_name_to_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeID_changer.py" beforeDir="false" afterPath="$PROJECT_DIR$/typeID_changer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,8 +152,27 @@
       <option name="project" value="LOCAL" />
       <updated>1712071990776</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="populator - didn't solve MAIN issue">
+      <option name="closed" value="true" />
+      <created>1712345635440</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712345635441</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit - Unsure which version of name_to_id im currently running" />
@@ -164,6 +185,7 @@
     <MESSAGE value="removed dead file" />
     <MESSAGE value="broke the y axis" />
     <MESSAGE value="camera setting works and centers NL's gsd" />
-    <option name="LAST_COMMIT_MESSAGE" value="camera setting works and centers NL's gsd" />
+    <MESSAGE value="populator - didn't solve MAIN issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="populator - didn't solve MAIN issue" />
   </component>
 </project>
