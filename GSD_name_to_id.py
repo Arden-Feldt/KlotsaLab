@@ -2,8 +2,8 @@ import gsd.hoomd
 import final_frame_id_lock
 import typeID_changer
 
-read_in_gsd = "modifiable_UNC_gsd.gsd"
-output_gsd = "clone_of_modifile.gsd"
+read_in_gsd = "GSDs/modifiable_UNC_gsd.gsd"
+output_gsd = "GSDs/clone_of_modifile.gsd"
 
 if __name__ == '__main__':
     print("started")
@@ -19,7 +19,7 @@ if __name__ == '__main__':
         for frame_index, frame in enumerate(file):
             if frame_index == 349:
                 # testing my binning funct:
-                num_bins = 100
+                num_bins = 6
                 bin_list = final_frame_id_lock.create_bin_list(num_bins)
                 particle_names = final_frame_id_lock.binning_method(frame, num_bins, box_dim, bin_list)
                 # For a 50/50 split:

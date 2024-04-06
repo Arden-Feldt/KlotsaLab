@@ -10,8 +10,8 @@ if __name__ == '__main__':
     half_step = box_dim / 2
 
     # Read in the file with the intent to name
-    with gsd.hoomd.open(name="modifiable_UNC_gsd.gsd", mode="r") as file:
-        with gsd.hoomd.open(name="centered_GSD.gsd", mode="w") as modified_file:
+    with gsd.hoomd.open(name="GSDs/modifiable_UNC_gsd.gsd", mode="r") as file:
+        with gsd.hoomd.open(name="GSDs/centered_GSD.gsd", mode="w") as modified_file:
             for frame in file:
                 # Get the positions of all particles in the current frame
                 particle_positions = frame.particles.position

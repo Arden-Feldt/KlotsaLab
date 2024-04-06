@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="ran with 100 bins">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader/.idea/ImageReader.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader/src/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader/src/ImageReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader/src/PictureImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GSD_name_to_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSD_name_to_id.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,24 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ImageReader.executor": "Run",
-    "Python.GSD_name_to_id.executor": "Run",
-    "Python.camera_set.executor": "Run",
-    "Python.final_frame_id_lock.executor": "Run",
-    "Python.gsd_populator.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode/pythonProject1",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ImageReader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.GSD_name_to_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python.camera_set.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_frame_id_lock.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gsd_populator.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode/pythonProject1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -185,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712350698154</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added java image reader (not working)">
+      <option name="closed" value="true" />
+      <created>1712425030635</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712425030635</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +211,7 @@
     <MESSAGE value="populator - didn't solve MAIN issue" />
     <MESSAGE value="annotated binfunction" />
     <MESSAGE value="ran with 100 bins" />
-    <option name="LAST_COMMIT_MESSAGE" value="ran with 100 bins" />
+    <MESSAGE value="added java image reader (not working)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added java image reader (not working)" />
   </component>
 </project>
