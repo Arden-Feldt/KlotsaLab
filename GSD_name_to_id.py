@@ -1,11 +1,10 @@
 import gsd.hoomd
 import final_frame_id_lock
 import typeID_changer
+from ImageReader import ImageReader
 
-read_in_gsd = "GSDs/modifiable_UNC_gsd.gsd"
-output_gsd = "GSDs/clone_of_modifile.gsd"
 
-if __name__ == '__main__':
+def gsd_render(input_gsd, output_gsd, num_bins, image_path):
     print("started")
 
     # Array for particle names
@@ -13,14 +12,13 @@ if __name__ == '__main__':
     box_dim = 361.8006286621094
 
     # Read in the file with the intent to name
-    with gsd.hoomd.open(name=read_in_gsd, mode="r") as file:
+    with gsd.hoomd.open(name=input_gsd, mode="r") as file:
 
         # Give Each Particle a Name
         for frame_index, frame in enumerate(file):
             if frame_index == 349:
                 # testing my binning funct:
-                num_bins = 6
-                bin_list = final_frame_id_lock.create_bin_list(num_bins)
+                bin_list = ImageReader.image_reader(image_path, num_bins)
                 particle_names = final_frame_id_lock.binning_method(frame, num_bins, box_dim, bin_list)
                 # For a 50/50 split:
                 # particle_names = final_frame_id_lock.particle_namer(frame)
