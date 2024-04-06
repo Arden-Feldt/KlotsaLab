@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="ran with 100 bins">
-      <change beforePath="$PROJECT_DIR$/GSD_name_to_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSD_name_to_id.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="cleaned up with more directories">
+      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.ImageReader.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Python.GSD_name_to_id.executor&quot;: &quot;Run&quot;,
     &quot;Python.camera_set.executor&quot;: &quot;Run&quot;,
     &quot;Python.final_frame_id_lock.executor&quot;: &quot;Run&quot;,
@@ -54,6 +57,40 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GSDs" />
+      <recent name="$PROJECT_DIR$/GSDModification" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ImageReader">
+    <configuration name="ImageReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ImageReader.ImageReader.src.ImageReader" />
+      <module name="pythonProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ImageReader.ImageReader.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ImageReader.ImageReader.src.Main" />
+      <module name="pythonProject1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ImageReader.ImageReader.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -183,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712425030635</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="cleaned up with more directories">
+      <option name="closed" value="true" />
+      <created>1712425349675</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712425349675</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +257,7 @@
     <MESSAGE value="annotated binfunction" />
     <MESSAGE value="ran with 100 bins" />
     <MESSAGE value="added java image reader (not working)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added java image reader (not working)" />
+    <MESSAGE value="cleaned up with more directories" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up with more directories" />
   </component>
 </project>
