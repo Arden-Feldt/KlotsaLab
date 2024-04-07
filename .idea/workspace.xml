@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="ignore update">
-      <change afterPath="$PROJECT_DIR$/ImageReader/ImageReader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="Super better organized everything, ImageReader.py returned inverse to bin_num rectangle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GSD_name_to_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSD_name_to_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final_frame_id_lock.py" beforeDir="false" afterPath="$PROJECT_DIR$/final_frame_id_lock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageReader/ImageReader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +44,7 @@
     "Application.Main.executor": "Run",
     "Python.GSD_name_to_id.executor": "Run",
     "Python.ImageReader.executor": "Run",
+    "Python.Testing.executor": "Run",
     "Python.camera_set.executor": "Run",
     "Python.final_frame_id_lock.executor": "Run",
     "Python.gsd_populator.executor": "Run",
@@ -254,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712434228820</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Super better organized everything, ImageReader.py returned inverse to bin_num rectangle">
+      <option name="closed" value="true" />
+      <created>1712438264364</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712438264364</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +293,7 @@
     <MESSAGE value="cleaned up with more directories" />
     <MESSAGE value="removed java files" />
     <MESSAGE value="ignore update" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore update" />
+    <MESSAGE value="Super better organized everything, ImageReader.py returned inverse to bin_num rectangle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Super better organized everything, ImageReader.py returned inverse to bin_num rectangle" />
   </component>
 </project>

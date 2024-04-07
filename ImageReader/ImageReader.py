@@ -20,5 +20,11 @@ def image_reader(path, num_bins):
                 result.append(1)
             else:
                 result.append(0)
-
     return result
+
+def color_to_binlist(color_list):
+    binlist = []
+    for i in range(0, len(color_list)):
+        if color_list[i] == 1:
+            binlist.append(i)
+    return binlist
