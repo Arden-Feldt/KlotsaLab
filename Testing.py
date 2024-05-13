@@ -1,4 +1,6 @@
-import GSD_name_to_id
+import renderer
 
+
+# Where you pass in all relevant information to create the visual
 if __name__ == '__main__':
-    GSD_name_to_id.gsd_render("GSDs/modifiable_UNC_gsd.gsd", "GSDs/clone_of_modifile.gsd", 35, "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode/pythonProject1/ImageReader/Images/UNCLogo.jpeg")
+    renderer.gsd_render("GSDs/modifiable_UNC_gsd.gsd", "GSDs/clone_of_modifile.gsd", 12, "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode/pythonProject1/ImageReader/Images/UNCLogo.jpeg")

@@ -1,6 +1,7 @@
 import gsd.hoomd
 
 if __name__ == '__main__':
+    """Sets the camera up for the specific simulations, so its centered"""
     print("started")
 
     # Array for particle names

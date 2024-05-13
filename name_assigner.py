@@ -6,6 +6,7 @@ particle_names = {}
 
 
 def particle_namer(frame):
+    """Splits the simulation down the middle - used for testing"""
     # Splits the simulation down the middle by the last frame
     for particle_idx in range(frame.particles.N):
         particle_position = frame.particles.position[particle_idx]
@@ -18,6 +19,7 @@ def particle_namer(frame):
 
 # create a binging method
 def binning_method(frame, num_bins, box_dim, highlight_bin_list):
+    """Used to create comple images in simulation by cutting it into managable bins - assigns names"""
     for particle_idx in range(frame.particles.N):
         particle_position = frame.particles.position[particle_idx]
 

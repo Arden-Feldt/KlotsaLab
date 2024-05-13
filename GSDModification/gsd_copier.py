@@ -1,11 +1,13 @@
 import gsd.hoomd
-import final_frame_id_lock
-import typeID_changer
+import name_assigner
+import name_to_id
 
 read_in_gsd = "centered_GSD.gsd"
 output_gsd = "output.gsd"
 
 if __name__ == '__main__':
+    """copies one gsd to another, bar for bar, frame by frame"""
+
     print("started")
 
     with gsd.hoomd.open(name=read_in_gsd, mode="r") as file:

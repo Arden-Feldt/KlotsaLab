@@ -1,10 +1,11 @@
 import gsd.hoomd
-import final_frame_id_lock
-import typeID_changer
+import name_assigner
+import name_to_id
 from ImageReader import ImageReader
 
 
 def gsd_render(input_gsd, output_gsd, num_bins, image_path):
+
     print("started")
 
     # Array for particle names
@@ -20,8 +21,7 @@ def gsd_render(input_gsd, output_gsd, num_bins, image_path):
                 # Locks colors in accordance to image
                 colorlist = ImageReader.image_reader(image_path, num_bins)
                 bin_list = ImageReader.color_to_binlist(colorlist)
-                particle_names = final_frame_id_lock.binning_method(frame, num_bins, box_dim, bin_list)
-                print(particle_names)
+                particle_names = name_assigner.binning_method(frame, num_bins, box_dim, bin_list)
 
         # Create a new GSD file for writing and set typeid given name
         with gsd.hoomd.open(name=output_gsd, mode="w") as modified_file:
@@ -29,6 +29,6 @@ def gsd_render(input_gsd, output_gsd, num_bins, image_path):
             # Looping through and update typeID to reflect name
             for frame_index, frame in enumerate(file):
                 # Write the modified frame to the new GSD file
-                modified_file.append(typeID_changer.id_update(frame, particle_names))
+                modified_file.append(name_to_id.id_update(frame, particle_names))
 
     print("finished")
