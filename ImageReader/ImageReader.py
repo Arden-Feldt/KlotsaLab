@@ -9,8 +9,6 @@ class ImageReader:
 
     def read(self):
         """Returns a list of 1s and 0s for pixels in bins depending on if the selected pixel in that bin was black"""
-        # TODO: Fix why it returns wrong sized list (I think its the wrong size)
-        # TODO: Why is it not capturing the photo right?
 
         # Open an image file
         image_path = self.path
@@ -22,7 +20,6 @@ class ImageReader:
 
         print("width: ", width, "\nheight: ", height)
 
-        # TODO: Is there a way to make these variables reliable ints without casting to int
         x_bin_size = int(width / self.num_bins)
         y_bin_size = int(height / self.num_bins)
 
