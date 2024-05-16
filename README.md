@@ -1,6 +1,3 @@
-This is the code that creates custom shapes in hoomd simulations.
+The repo of work I've done for KlotsaGroup as an Undergrad Researcher.
 
-GSD_name_to_id.py
-camera_set.py
-final_frame_id_lock.py
-typeID_changer.py
+Project aims to create visualisations that come together in particle simulations.
