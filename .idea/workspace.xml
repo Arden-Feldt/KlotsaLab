@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="Added object orientation">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="cleaning up things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageReader/ImageReader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Renderer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +311,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715878792054</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added class and __init__">
+      <option name="closed" value="true" />
+      <created>1715879785158</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715879785158</updated>
+    </task>
+    <task id="LOCAL-00027" summary="cleaning up things">
+      <option name="closed" value="true" />
+      <created>1715879799129</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715879799129</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -326,7 +342,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Commit - Unsure which version of name_to_id im currently running" />
     <MESSAGE value="Created files and methods to clean up main code block" />
     <MESSAGE value="Broken Camera Setting code" />
     <MESSAGE value="Updating math logic for camera setting (still broke)&#10;Cleaned up some code" />
@@ -350,6 +365,8 @@
     <MESSAGE value="xml" />
     <MESSAGE value="fixed formatting in main" />
     <MESSAGE value="Added object orientation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added object orientation" />
+    <MESSAGE value="Added class and __init__" />
+    <MESSAGE value="cleaning up things" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning up things" />
   </component>
 </project>

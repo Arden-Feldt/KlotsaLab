@@ -1,14 +1,6 @@
 from PIL import Image
 
 
-def color_to_binlist(color_list):
-    binlist = []
-    for i in range(0, len(color_list)):
-        if color_list[i] == 1:
-            binlist.append(i)
-    return binlist
-
-
 class ImageReader:
 
     def __init__(self, path, num_bins):
@@ -17,6 +9,8 @@ class ImageReader:
 
     def read(self):
         """Returns a list of 1s and 0s for pixels in bins depending on if the selected pixel in that bin was black"""
+        # TODO: Fix why it returns wrong sized list (I think its the wrong size)
+        # TODO: Why is it not capturing the photo right?
 
         # Open an image file
         image_path = self.path
@@ -25,6 +19,10 @@ class ImageReader:
 
         # get image dimensions and assign bin sizes
         width, height = image.size
+
+        print("width: " + width + "\n height: " + height)
+
+        # TODO: Was casting to int, may be the problem
         x_bin_size = int(width / self.num_bins)
         y_bin_size = int(height / self.num_bins)
 
@@ -34,4 +32,20 @@ class ImageReader:
                     result.append(1)
                 else:
                     result.append(0)
+
         return result
+
+    def color_to_binlist(self, color_list):
+        binlist = []
+        for i in range(0, len(color_list)):
+            if color_list[i] == 1:
+                binlist.append(i)
+        return binlist
+
+    def visualise_colorlist(self, colorlist):
+        i = 0
+        for bin_color in colorlist:
+            print(bin_color, end=' ')
+            i += 1
+            if i % self.num_bins == 0:
+                print("")

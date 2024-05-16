@@ -25,12 +25,12 @@ class Renderer:
                 if frame_index == 349:
 
                     # Locks colors in accordance to image
-                    image_reader = ImageReader
+                    image_reader = ImageReader.ImageReader(self.image_path, self.num_bins)
                     colorlist = image_reader.read()
                     bin_list = image_reader.color_to_binlist(colorlist)
+                    image_reader.visualise_colorlist(colorlist)
 
                     binner = Binner.Binner(frame, self.num_bins, bin_list)
-
                     p_names = binner.binning_method()
 
             # Create a new GSD file for writing and set typeid given name
