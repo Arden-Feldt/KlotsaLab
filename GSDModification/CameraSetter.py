@@ -1,6 +1,5 @@
 import gsd.hoomd
 
-from Testing import box_dim
 
 
 class CameraSetter:
@@ -13,7 +12,7 @@ class CameraSetter:
         """Sets the camera up for the specific simulations, so its centered"""
         print("started setting")
 
-        half_step = box_dim / 2
+        half_step = 361.8006286621094 / 2
 
         # Read in the file with the intent to name
         with gsd.hoomd.open(name=self.input_file, mode="r") as file:
