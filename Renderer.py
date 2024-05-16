@@ -23,9 +23,11 @@ class Renderer:
             # Give Each Particle a Name
             for frame_index, frame in enumerate(file):
                 if frame_index == 349:
+
                     # Locks colors in accordance to image
-                    colorlist = ImageReader.image_reader(self.image_path, self.num_bins)
-                    bin_list = ImageReader.color_to_binlist(colorlist)
+                    image_reader = ImageReader
+                    colorlist = image_reader.read()
+                    bin_list = image_reader.color_to_binlist(colorlist)
 
                     binner = Binner.Binner(frame, self.num_bins, bin_list)
 
@@ -49,7 +51,7 @@ class Renderer:
             # checks there are enough names for the particles
             if frame.particles.N != len(p_names):
                 print("Fucked up")
-                raise Exception("typeID_changer: number of particles and number of names didn't match!")
+                raise Exception("renderer.id_update(): number of particles and number of names didn't match!")
 
             # Retrieve the particle name from the dictionary
             particle_name = p_names.get(particle_index)
@@ -59,15 +61,6 @@ class Renderer:
 
         return frame
 
-    def particle_namer(self, frame):
-        """Splits the simulation down the middle - used for testing"""
-        # Splits the simulation down the middle by the last frame
-        for particle_idx in range(frame.particles.N):
-            particle_position = frame.particles.position[particle_idx]
-            # Generate particle name based on the condition
-            particle_name = 1 if particle_position[0] >= 0 else 0
-            # Store the particle name in the dictionary
-            particle_names[particle_idx] = particle_name
-        return particle_names
+
 
     # create a binging method
