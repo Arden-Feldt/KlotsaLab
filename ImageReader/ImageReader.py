@@ -20,9 +20,9 @@ class ImageReader:
         # get image dimensions and assign bin sizes
         width, height = image.size
 
-        print("width: " + width + "\n height: " + height)
+        print("width: ", width, "\nheight: ", height)
 
-        # TODO: Was casting to int, may be the problem
+        # TODO: Is there a way to make these variables reliable ints without casting to int
         x_bin_size = int(width / self.num_bins)
         y_bin_size = int(height / self.num_bins)
 
