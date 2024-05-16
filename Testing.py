@@ -6,7 +6,7 @@ box_dim = 361.8006286621094
 if __name__ == '__main__':
     renderer = Renderer.Renderer("GSDs/modifiable_UNC_gsd.gsd",
                                  "GSDs/clone_of_modifile.gsd",
-                                 6,
+                                 100,
                                  "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode"
                                  "/pythonProject1/ImageReader/Images/UNCLogo.jpeg")
 
