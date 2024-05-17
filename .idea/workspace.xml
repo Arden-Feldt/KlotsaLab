@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="added todos">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="updated local git email">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
     </list>
@@ -41,6 +41,7 @@
   "keyToString": {
     "Application.ImageReader.executor": "Run",
     "Application.Main.executor": "Run",
+    "Python.CameraSetter.executor": "Run",
     "Python.GSD_name_to_id.executor": "Run",
     "Python.ImageReader.executor": "Run",
     "Python.Testing.executor": "Run",
@@ -405,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715973197869</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="updated local git email">
+      <option name="closed" value="true" />
+      <created>1715974490613</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1715974490613</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -420,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="populator - didn't solve MAIN issue" />
     <MESSAGE value="annotated binfunction" />
     <MESSAGE value="ran with 100 bins" />
     <MESSAGE value="added java image reader (not working)" />
@@ -445,6 +453,7 @@
     <MESSAGE value="resolved all TODOs" />
     <MESSAGE value="commented out setter and doubled bins" />
     <MESSAGE value="added todos" />
-    <option name="LAST_COMMIT_MESSAGE" value="added todos" />
+    <MESSAGE value="updated local git email" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated local git email" />
   </component>
 </project>
