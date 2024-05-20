@@ -12,7 +12,7 @@ class Renderer:
         self.image_path = image_path
 
     def gsd_render(self):
-        print("started")
+        print("started render")
 
         # Array for particle names
         p_names = {}
@@ -41,7 +41,7 @@ class Renderer:
                     # Write the modified frame to the new GSD file
                     modified_file.append(self.id_update(frame, p_names))
 
-        print("finished")
+        print("finished render")
 
     def id_update(self, frame, p_names):
         """changes id's to names that are passed in"""

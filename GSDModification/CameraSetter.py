@@ -41,3 +41,6 @@ class CameraSetter:
                     frame.particles.position[:] = particle_positions
 
                     modified_file.append(frame)
+
+        print("finished setting")
+

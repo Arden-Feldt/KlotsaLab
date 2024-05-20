@@ -10,6 +10,8 @@ class ImageReader:
     def read(self):
         """Returns a list of 1s and 0s for pixels in bins depending on if the selected pixel in that bin was black"""
 
+        print("started reading")
+
         # Open an image file
         image_path = self.path
         image = Image.open(image_path)
@@ -30,13 +32,19 @@ class ImageReader:
                 else:
                     result.append(0)
 
+        print("finished reading")
+
         return result
 
     def color_to_binlist(self, color_list):
+        print("started binlisting")
+
         binlist = []
         for i in range(0, len(color_list)):
             if color_list[i] == 1:
                 binlist.append(i)
+
+        print("finished binlisting")
         return binlist
 
     def visualise_colorlist(self, colorlist):

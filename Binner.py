@@ -11,6 +11,8 @@ class Binner:
         self.highlight_bin_list = highlight_bin_list
 
     def binning_method(self):
+        print("started binning")
+
         particle_names = {}
 
         """Used to create comple images in simulation by cutting it into managable bins - assigns names"""
@@ -31,6 +33,7 @@ class Binner:
                     current_bin += 1
                     y += box_dim / self.num_bins
                 x += box_dim / self.num_bins
+        print("finished binning")
         return particle_names
 
     '''
