@@ -5,8 +5,8 @@ import gsd.hoomd
 class CameraSetter:
 
     def __init__(self, input_file, output_file):
-        self.input_file = input_file
-        self.output_file = output_file
+        self.input_file = "GSDs/" + input_file
+        self.output_file = "GSDs/" + output_file
 
     def set_cam(self):
         """Sets the camera up for the specific simulations, so its centered"""

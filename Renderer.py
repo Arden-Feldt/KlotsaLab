@@ -6,8 +6,8 @@ from ImageReader import ImageReader
 
 class Renderer:
     def __init__(self, input_gsd, output_gsd, num_bins, image_path):
-        self.input_gsd = input_gsd
-        self.output_gsd = output_gsd
+        self.input_gsd = "GSDs/" + input_gsd
+        self.output_gsd = "GSDs/" + output_gsd
         self.num_bins = num_bins
         self.image_path = image_path
 
@@ -48,11 +48,12 @@ class Renderer:
 
     def id_update(self, frame, p_names):
         """changes id's to names that are passed in"""
+        temp_frame = frame
 
-        for particle_index in range(frame.particles.N):
+        for particle_index in range(temp_frame.particles.N):
 
             # checks there are enough names for the particles
-            if frame.particles.N != len(p_names):
+            if temp_frame.particles.N != len(p_names):
                 print("Fucked up")
                 raise Exception("renderer.id_update(): number of particles and number of names didn't match!")
 
@@ -60,8 +61,8 @@ class Renderer:
             particle_name = p_names.get(particle_index)
             if particle_name is not None:
                 # Set the typeid for the particle based on the name
-                frame.particles.typeid[particle_index] = particle_name
+                temp_frame.particles.typeid[particle_index] = particle_name
 
-        return frame
+        return temp_frame
 
     # create a binging method
