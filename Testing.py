@@ -15,7 +15,7 @@ if __name__ == '__main__':
     # TODO: Make colorlist -> bins a hashset
     renderer = Renderer.Renderer("GSDs/modifiable_UNC_gsd.gsd",
                                  "GSDs/clone_of_modifile.gsd",
-                                 5,
+                                 100,
                                  "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode"
                                  "/pythonProject1/ImageReader/Images/UNCLogo.jpeg")
 

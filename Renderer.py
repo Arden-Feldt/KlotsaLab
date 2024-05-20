@@ -23,7 +23,6 @@ class Renderer:
             # Give Each Particle a Name
             for frame_index, frame in enumerate(file):
                 if frame_index == 349:
-
                     # Locks colors in accordance to image
                     image_reader = ImageReader.ImageReader(self.image_path, self.num_bins)
                     colorlist = image_reader.read()
@@ -31,7 +30,9 @@ class Renderer:
                     image_reader.visualise_colorlist(colorlist)
 
                     binner = Binner.Binner(frame, self.num_bins, bin_list)
-                    p_names = binner.binning_method()
+                    p_names = binner.optimize_binning()
+
+            print("started gsd build")
 
             # Create a new GSD file for writing and set typeid given name
             with gsd.hoomd.open(name=self.output_gsd, mode="w") as modified_file:
@@ -40,6 +41,8 @@ class Renderer:
                 for frame_index, frame in enumerate(file):
                     # Write the modified frame to the new GSD file
                     modified_file.append(self.id_update(frame, p_names))
+
+        print("finished gsd build")
 
         print("finished render")
 
@@ -60,7 +63,5 @@ class Renderer:
                 frame.particles.typeid[particle_index] = particle_name
 
         return frame
-
-
 
     # create a binging method
