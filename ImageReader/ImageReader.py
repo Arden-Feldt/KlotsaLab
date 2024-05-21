@@ -39,10 +39,10 @@ class ImageReader:
     def color_to_binlist(self, color_list):
         print("started binlisting")
 
-        binlist = []
+        binlist = set()
         for i in range(0, len(color_list)):
             if color_list[i] == 1:
-                binlist.append(i)
+                binlist.add(i)
 
         print("finished binlisting")
         return binlist
