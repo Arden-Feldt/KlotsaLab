@@ -1,5 +1,5 @@
 import gsd.hoomd
-
+import copy
 import Binner
 from ImageReader import ImageReader
 
@@ -48,10 +48,10 @@ class Renderer:
 
     def id_update(self, frame, p_names):
         """changes id's to names that are passed in"""
-        temp_frame = frame
+        # Make a deep copy of the frame object
+        temp_frame = copy.deepcopy(frame)
 
         for particle_index in range(temp_frame.particles.N):
-
             # checks there are enough names for the particles
             if temp_frame.particles.N != len(p_names):
                 print("Fucked up")

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="made copier a proper class">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="improved legibility">
+      <change afterPath="$PROJECT_DIR$/GSDModification/GSDrChecker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GSDModification/CameraSetter.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSDModification/CameraSetter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Renderer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testing.py" afterDir="false" />
     </list>
@@ -459,7 +459,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716231075389</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="improved legibility">
+      <option name="closed" value="true" />
+      <created>1716233265493</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1716233265493</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ignore update" />
     <MESSAGE value="Super better organized everything, ImageReader.py returned inverse to bin_num rectangle" />
     <MESSAGE value="Fixed ImageReader.py for all white" />
     <MESSAGE value="Testing bugs, the bugs remain" />
@@ -499,6 +506,7 @@
     <MESSAGE value="optimized binning" />
     <MESSAGE value="removed unoptimized binning method" />
     <MESSAGE value="made copier a proper class" />
-    <option name="LAST_COMMIT_MESSAGE" value="made copier a proper class" />
+    <MESSAGE value="improved legibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved legibility" />
   </component>
 </project>

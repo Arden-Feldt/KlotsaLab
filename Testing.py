@@ -1,12 +1,13 @@
 import Renderer
-from GSDModification import CameraSetter
-from GSDModification import GSDCopier
+from GSDModification import CameraSetter, GSDrChecker, GSDCopier
 
 box_dim = 361.8006286621094
 
 # Where you pass in all relevant information to create the visual
 if __name__ == '__main__':
-    # TODO: figure out why you can't read centered_GSD.gsd
+    #checker = GSDrChecker.GSDrChecker("centered_gsd.gsd")
+    #checker.check()
+
     # gsdCopier = GSDCopier.GSDCopier("centered_GSD.gsd", "output.gsd")
     # gsdCopier.copy()
 
