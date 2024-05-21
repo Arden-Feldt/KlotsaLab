@@ -1,7 +1,7 @@
 import gsd.hoomd
 
 
-class GSDrChecker:
+class RWgsdChecker:
     def __init__(self, gsd):
         self.gsd = "GSDs/" + gsd
 
@@ -18,5 +18,3 @@ class GSDrChecker:
 
         except PermissionError:
             print(f"The file '{self.gsd}' is read-only.")
-
-

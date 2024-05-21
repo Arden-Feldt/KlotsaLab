@@ -1,5 +1,7 @@
-import gsd.hoomd
 import copy
+
+import gsd.hoomd
+
 import Binner
 from ImageReader import ImageReader
 

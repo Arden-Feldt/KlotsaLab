@@ -1,7 +1,6 @@
 import gsd.hoomd
 
 
-
 class CameraSetter:
 
     def __init__(self, input_file, output_file):
@@ -43,4 +42,3 @@ class CameraSetter:
                     modified_file.append(frame)
 
         print("finished setting")
-

@@ -1,20 +1,9 @@
 import Renderer
-from GSDModification import CameraSetter, GSDrChecker, GSDCopier
 
 box_dim = 361.8006286621094
 
 # Where you pass in all relevant information to create the visual
 if __name__ == '__main__':
-    #checker = GSDrChecker.GSDrChecker("centered_gsd.gsd")
-    #checker.check()
-
-    # gsdCopier = GSDCopier.GSDCopier("centered_GSD.gsd", "output.gsd")
-    # gsdCopier.copy()
-
-    # Camera Setter // doesn't work for some reason??
-    # camset = CameraSetter.CameraSetter("modifiable_UNC_gsd.gsd", "centered_gsd.gsd")
-    # camset.set_cam()
-
     # num_bins must be a factor of image height and size
     # TODO: Optimize for loops
     # TODO: Make colorlist -> bins a hashset
