@@ -1,6 +1,6 @@
 import numpy as np
 
-from Testing import box_dim
+from Main import box_dim
 
 
 class Binner:
