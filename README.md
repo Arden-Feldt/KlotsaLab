@@ -22,16 +22,16 @@ You need the following to have this work properly
 
 ## Class Descriptors
 
-### Main
+### Main.py
 Once you're happy with the parameters you pass into Renderer(), just run everything from here. Additionally there are three commented out utility functions that can be very useful, more on those later. The process should finish well within five minutes, if it doesn't something is wrong.
 
-### Renderer
+### Renderer.py
 This class does most of the heavy lifting. It'll call other functions to read in your selected image (ImageReader.py), bin up your simulation, and then assign particle id's to each bin per the selected image(Binner.py). Then it'll build the new .gsd, this should take the longest, about 2 minutes.
 
-### Binner
+### Binner.py
 optimize_binning() will cut up your simulation into little pixel like boxes, and then does the actual id setting.
 
-### ImageReader
+### ImageReader.py
 Reads in a black and white .jpeg and returns an array that will line up with the simulation bins. The image will only care about the parts of the image that are black, marking them as 1 and everything else a 0. Also other image types don't seem to work for the most part, but you can mess with that.
 
 ### GSDModification
