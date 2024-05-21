@@ -19,7 +19,9 @@ You need the following to have this work properly
   * I provide two UNC logo options
   * Any black and white .jpeg will work like you want it to.
   * Put them in ImageReader/Images/ (not required)
-  
+
+## Class Descriptors
+
 ### Main
 Once you're happy with the parameters you pass into Renderer(), just run everything from here. Additionally there are three commented out utility functions that can be very useful, more on those later. The process should finish well within five minutes, if it doesn't something is wrong.
 
