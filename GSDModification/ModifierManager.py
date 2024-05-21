@@ -1,7 +1,7 @@
 from GSDModification import GSDCopier, CameraSetter, RWgsdChecker
 
 
-def copy(input_gsd, output_gsd):
+def copy_gsd(input_gsd, output_gsd):
     gsd_copier = GSDCopier.GSDCopier(input_gsd, output_gsd)
     gsd_copier.copy()
 
