@@ -7,15 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="making beginner friendly">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="camera shift logic works now, but only produces one frame">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GSDModification/CameraSetter.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSDModification/CameraSetter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GSDModification/GSDCopier.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSDModification/GSDCopier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GSDModification/ModifierManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSDModification/ModifierManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GSDModification/RWgsdChecker.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSDModification/RWgsdChecker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Renderer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,22 +145,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00008" summary="removed dead file">
-      <option name="closed" value="true" />
-      <created>1711849956495</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1711849956495</updated>
-    </task>
-    <task id="LOCAL-00009" summary="broke the y axis">
-      <option name="closed" value="true" />
-      <created>1711851301248</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1711851301248</updated>
     </task>
     <task id="LOCAL-00010" summary="camera setting works and centers NL's gsd">
       <option name="closed" value="true" />
@@ -544,7 +522,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716998644920</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="removed global var: box_dim and instead added functions to cope">
+      <option name="closed" value="true" />
+      <created>1717005948828</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1717005948829</updated>
+    </task>
+    <task id="LOCAL-00058" summary="camera shift logic works now, but only produces one frame">
+      <option name="closed" value="true" />
+      <created>1717005973542</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1717005973542</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -559,8 +553,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cleaning up things" />
-    <MESSAGE value="bugfixing (not complete)" />
     <MESSAGE value="first successful pass" />
     <MESSAGE value="successful image" />
     <MESSAGE value="camera setter object" />
@@ -584,6 +576,8 @@
     <MESSAGE value="added video" />
     <MESSAGE value="validate user inputs now" />
     <MESSAGE value="making beginner friendly" />
-    <option name="LAST_COMMIT_MESSAGE" value="making beginner friendly" />
+    <MESSAGE value="removed global var: box_dim and instead added functions to cope" />
+    <MESSAGE value="camera shift logic works now, but only produces one frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="camera shift logic works now, but only produces one frame" />
   </component>
 </project>
