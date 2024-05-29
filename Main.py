@@ -18,11 +18,11 @@ if __name__ == '__main__':
 
     # num_bins must be a factor of image height and size
     # TODO: Make colorlist -> bins a hashset
-    renderer = Renderer.Renderer("centered_gsd.gsd",
-                                 "clone_of_modifile.gsd",
-                                 600,
-                                 "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode"
-                                 "/pythonProject1/ImageReader/Images/clusterUNC.jpeg")
+    renderer = Renderer.Renderer("GSDs/centered_gsd.gsd",
+                                 "GSDs/clone_of_modifile.gsd",
+                                 10,
+                                 "ImageReader/Images/clusterUNC.jpeg",
+                                 349)
 
     renderer.gsd_render()
 
