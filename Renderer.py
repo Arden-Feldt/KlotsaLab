@@ -8,12 +8,6 @@ from GSDModification.ModifierManager import get_x_box_dim, get_y_box_dim
 from ImageReader import ImageReader
 
 
-def get_final_frame(gsd_file):
-    with gsd.hoomd.open(name=gsd_file, mode='r') as file:
-        # Get the number of frames
-        return len(file)
-
-
 class Renderer:
     def __init__(self, input_gsd, output_gsd, num_bins, image_path, image_frame):
 
@@ -45,8 +39,6 @@ class Renderer:
 
                     binner = Binner.Binner(frame, self.num_bins, bin_list)
                     p_names = binner.optimize_binning(get_x_box_dim(self.input_gsd), get_y_box_dim(self.input_gsd))
-
-                    print("p_names len at render: ", len(p_names))
 
             print("started gsd build")
 

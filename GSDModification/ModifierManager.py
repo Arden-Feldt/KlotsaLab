@@ -38,6 +38,12 @@ def get_y_box_dim(input_gsd):
             return box[1]
 
 
+def get_final_frame(gsd_file):
+    with gsd.hoomd.open(name=gsd_file, mode='r') as file:
+        # Get the number of frames
+        return len(file)
+
+
 class ModifierManager:
     def __init__(self):
         """inits the modifier manager"""
