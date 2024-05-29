@@ -1,7 +1,5 @@
 import numpy as np
 
-from Main import box_dim
-
 
 class Binner:
 
@@ -10,7 +8,7 @@ class Binner:
         self.num_bins = num_bins
         self.highlight_bin_list = highlight_bin_list
 
-    def optimize_binning(self):
+    def optimize_binning(self, x_dim, y_dim):
         """Used to create complex images in simulation by cutting it into manageable bins - assigns names"""
 
         print("started opt-binning")
@@ -18,8 +16,8 @@ class Binner:
         particle_names = {}
 
         # Pre-calculate bin boundaries
-        bin_boundaries_x = np.arange(-box_dim / 2, box_dim / 2, box_dim / self.num_bins)
-        bin_boundaries_y = np.arange(-box_dim / 2, box_dim / 2, box_dim / self.num_bins)
+        bin_boundaries_x = np.arange(-x_dim / 2, x_dim / 2, x_dim / self.num_bins)
+        bin_boundaries_y = np.arange(-y_dim / 2, y_dim / 2, y_dim / self.num_bins)
 
         for particle_idx in range(self.frame.particles.N):
             particle_position = self.frame.particles.position[particle_idx]

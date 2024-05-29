@@ -3,8 +3,8 @@ import gsd.hoomd
 
 class GSDCopier:
     def __init__(self, input_gsd, output_gsd):
-        self.read_in_gsd = "GSDs/" + input_gsd
-        self.output_gsd = "GSDs/" + output_gsd
+        self.read_in_gsd = input_gsd
+        self.output_gsd = output_gsd
 
     def copy(self):
         """copies one gsd to another, bar for bar, frame by frame"""

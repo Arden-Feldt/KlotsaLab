@@ -1,3 +1,5 @@
+import gsd
+
 from GSDModification import GSDCopier, CameraSetter, RWgsdChecker
 
 
@@ -6,14 +8,34 @@ def copy_gsd(input_gsd, output_gsd):
     gsd_copier.copy()
 
 
-def set_camera(input_gsd, output_gsd):
+def set_camera(input_gsd, output_gsd, right_shift, up_shift):
     camset = CameraSetter.CameraSetter(input_gsd, output_gsd)
-    camset.set_cam()
+    camset.set_cam(get_x_box_dim(input_gsd), get_y_box_dim(input_gsd), right_shift, up_shift)
 
 
 def check_write(gsd):
     checker = RWgsdChecker.RWgsdChecker(gsd)
     checker.check()
+
+
+def get_x_box_dim(input_gsd):
+    # Open the GSD file
+    with gsd.hoomd.open(name=input_gsd, mode="r") as file:
+        # Iterate over each frame in the file
+        for frame_index, frame in enumerate(file):
+            # Get the box dimensions
+            box = frame.configuration.box
+            return box[0]
+
+
+def get_y_box_dim(input_gsd):
+    # Open the GSD file
+    with gsd.hoomd.open(name=input_gsd, mode="r") as file:
+        # Iterate over each frame in the file
+        for frame_index, frame in enumerate(file):
+            # Get the box dimensions
+            box = frame.configuration.box
+            return box[1]
 
 
 class ModifierManager:

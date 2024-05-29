@@ -3,7 +3,7 @@ import gsd.hoomd
 
 class RWgsdChecker:
     def __init__(self, gsd):
-        self.gsd = "GSDs/" + gsd
+        self.gsd = gsd
 
     def check(self):
         try:

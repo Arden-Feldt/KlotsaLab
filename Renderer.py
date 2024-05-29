@@ -4,6 +4,7 @@ import os
 import gsd.hoomd
 
 import Binner
+from GSDModification.ModifierManager import get_x_box_dim, get_y_box_dim
 from ImageReader import ImageReader
 
 
@@ -43,7 +44,9 @@ class Renderer:
                     image_reader.visualise_colorlist(colorlist)
 
                     binner = Binner.Binner(frame, self.num_bins, bin_list)
-                    p_names = binner.optimize_binning()
+                    p_names = binner.optimize_binning(get_x_box_dim(self.input_gsd), get_y_box_dim(self.input_gsd))
+
+                    print("p_names len at render: ", len(p_names))
 
             print("started gsd build")
 
