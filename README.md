@@ -2,7 +2,7 @@
 The repository of work I've done as an undergraduate researcher with Klotsa Group.
 
 ## Image Visualizer in Particle Simulations
-This is currently the meat of the code in this project. When you run the main, this project paints a image of your choice (like a UNC logo) into a particle simulation (.gsd file). The design comes together at the end, so you get to watch the particles move around until the image forms from the simulation. You can see what this looks like by downloading lowresFinalVisual.mp4.
+This is currently the meat of the code in this project. When you run the main, this project paints a image of your choice (like a UNC logo) into a particle simulation (.gsd file). The design comes together at the end (or a frame of your choice), so you get to watch the particles move around until the image forms from the simulation. You can see what this looks like by downloading lowresFinalVisual.mp4. I've made a lot of changes to make sure its a generalized and friendly as possible, but if you stray to far from what I was originally doing you may have to patch up some edge cases. I've cleaned up every one I found while I worked at the lab.
 
 ## Prerequisites
 You need the following to have this work properly
@@ -27,6 +27,26 @@ Once you're happy with the parameters you pass into Renderer(), just run everyth
 
 ### Renderer.py
 This class does most of the heavy lifting. It'll call other functions to read in your selected image (ImageReader.py), bin up your simulation, and then assign particle id's to each bin per the selected image(Binner.py). Then it'll build the new .gsd, this should take the longest of any part of the rendering process, about 2 minutes.
+
+#### Renderer takes in the following parameters, and its crucial you understand them.
+* input_gsd
+  * This is the gsd you are going to read in.
+  * This should be provided by Dr. Klotsa or Nick.
+  * This file will not, and should not, be modified in any way.
+* output_gsd
+  * This is the path and name where the programs output will end up.
+  * Make sure you specify it's a .gsd.
+* num_bins
+  * This is the number of bins on each axis.
+  * The total number of bins will be num_bins^2
+  * This number MUST be a factor of the dimensions of your image. Its recommended to make your image a square and set num_bins to the number of pixels on each side.
+* image_path
+  * This is just the path to the black and white .jpeg you selected.
+  * It's easiest if this image is a square, as the simulation will then paint one-to-one on the simulation.
+* image_frame
+  * This is the frame of your simulation where the image comes together.
+  * Setting image_frame to **get_final_frame(input_gsd) - 1** will make the image come together at the last frame of the simulation.
+  * The image_frame must be a number less then the number of frames in your simulation.
 
 ### Binner.py
 optimize_binning() will cut up your simulation into little pixel like boxes and save for each particle if they are inside the image mask or not, but Renderer.id_update() then does the actual particle id setting.
