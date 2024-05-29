@@ -7,16 +7,22 @@ import Binner
 from ImageReader import ImageReader
 
 
-class Renderer:
-    def __init__(self, input_gsd, output_gsd, num_bins, image_path, final_frame):
+def get_final_frame(gsd_file):
+    with gsd.hoomd.open(name=gsd_file, mode='r') as file:
+        # Get the number of frames
+        return len(file)
 
-        self.validate_inputs(input_gsd, output_gsd, num_bins, image_path, final_frame)
+
+class Renderer:
+    def __init__(self, input_gsd, output_gsd, num_bins, image_path, image_frame):
+
+        self.validate_inputs(input_gsd, output_gsd, num_bins, image_path, image_frame)
 
         self.input_gsd = input_gsd
         self.output_gsd = output_gsd
         self.num_bins = num_bins
         self.image_path = image_path
-        self.final_frame = final_frame
+        self.image_frame = image_frame
 
     def gsd_render(self):
         print("started render")
@@ -29,7 +35,7 @@ class Renderer:
 
             # Give Each Particle a Name
             for frame_index, frame in enumerate(file):
-                if frame_index == self.final_frame:
+                if frame_index == self.image_frame:
                     # Locks colors in accordance to image
                     image_reader = ImageReader.ImageReader(self.image_path, self.num_bins)
                     colorlist = image_reader.read()
@@ -46,7 +52,7 @@ class Renderer:
 
                 # Looping through and update typeID to reflect name
                 for frame_index, frame in enumerate(file):
-                    if frame_index <= self.final_frame:
+                    if frame_index <= self.image_frame:
                         # Write the modified frame to the new GSD file
                         modified_file.append(self.id_update(frame, p_names))
 
@@ -73,15 +79,10 @@ class Renderer:
 
         return temp_frame
 
-    def validate_inputs(self, input_gsd, output_gsd, num_bins, image_path, final_frame):
-
-        with gsd.hoomd.open(name=input_gsd, mode='r') as file:
-            # Get the number of frames
-            num_frames = len(file)
-
+    def validate_inputs(self, input_gsd, output_gsd, num_bins, image_path, image_frame):
         if num_bins <= 0:
             raise Exception("Renderer: Num bins must be positive!")
-        if final_frame < 0 | final_frame >= num_frames:
+        if image_frame < 0 | image_frame >= get_final_frame(input_gsd):
             raise Exception("Renderer: Final Frame value invalid")
 
         if self.check_invalid_path(input_gsd):
@@ -103,4 +104,5 @@ class Renderer:
             print(f"The path '{path}' does not exist.")
 
         return True
+
     # create a binging method

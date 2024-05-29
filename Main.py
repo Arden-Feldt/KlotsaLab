@@ -6,26 +6,23 @@ box_dim = 361.8006286621094
 # Where you pass in all relevant information to create the visual
 if __name__ == '__main__':
 
-    # function used to copy a gsd to a new file
-    # copy_gsd("modifiable_UNC_gsd.gsd", "centered_gsd.gsd")
+    # UTILITY FUNCTIONS:
+    # copy_gsd(<your gsd>, <new gsd>)
+    # set_camera(<your gsd>, <new centered>)
+    # check_write(<gsd with unclear permissions>)
 
-    # TODO: make this more general
-    # sets the camera to a specific location, only useful if you have my gsd.
-    # set_camera("modifiable_UNC_gsd.gsd", "centered_gsd.gsd")
-
-    # check if you can write to a specific gsd
-    # check_write("clone_of_modifile.gsd")
+    input_gsd = "GSDs/centered_gsd.gsd"                              # the gsd you'll read in and copy
+    output_gsd = "GSDs/clone_of_modifile.gsd"                        # the gsd the program will make, update, and save
+    num_bins = 600                                                   # the # of bins on an axis, total bins = num_bins^2
+    image_path = "ImageReader/Images/clusterUNC.jpeg"                # Path to black and white image you're using
+    image_frame = Renderer.get_final_frame("GSDs/centered_gsd.gsd")  # Frame where the image comes together
 
     # num_bins must be a factor of image height and size
-    # TODO: Make colorlist -> bins a hashset
-    renderer = Renderer.Renderer("GSDs/centered_gsd.gsd",
-                                 "GSDs/clone_of_modifile.gsd",
-                                 10,
-                                 "ImageReader/Images/clusterUNC.jpeg",
-                                 349)
+    renderer = Renderer.Renderer(input_gsd,
+                                 output_gsd,
+                                 num_bins,
+                                 image_path,
+                                 image_frame)
 
     renderer.gsd_render()
-
-    # TODO: Add post proc
-    # TODO: Add color
 

@@ -8,6 +8,7 @@ class CameraSetter:
         self.output_file = "GSDs/" + output_file
 
     def set_cam(self):
+        # TODO: make this more general
         """Sets the camera up for the specific simulations, so its centered"""
         print("started setting")
 
