@@ -2,7 +2,7 @@
 The repository of work I've done as an undergraduate researcher with Klotsa Group.
 
 ## Image Visualizer in Particle Simulations
-This is currently the meat of the code in this project. When you run the main, this project paints a image of your choice (like a UNC logo) into a particle simulation (.gsd file). The design comes together at the end, so you get to watch the particles move around until the image forms from the simulation.
+This is currently the meat of the code in this project. When you run the main, this project paints a image of your choice (like a UNC logo) into a particle simulation (.gsd file). The design comes together at the end, so you get to watch the particles move around until the image forms from the simulation. You can see what this looks like by downloading lowresFinalVisual.mp4.
 
 ## Prerequisites
 You need the following to have this work properly
