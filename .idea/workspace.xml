@@ -7,8 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="Camera setter is now generic">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="updated comments">
+      <change beforePath="$PROJECT_DIR$/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GSDModification/ModifierManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSDModification/ModifierManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageReader/ImageReader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Renderer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,22 +147,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00011" summary="camera setting works and centers NL's gsd">
-      <option name="closed" value="true" />
-      <created>1712071990776</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712071990776</updated>
-    </task>
-    <task id="LOCAL-00012" summary="populator - didn't solve MAIN issue">
-      <option name="closed" value="true" />
-      <created>1712345635440</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1712345635441</updated>
     </task>
     <task id="LOCAL-00013" summary="annotated binfunction">
       <option name="closed" value="true" />
@@ -537,7 +524,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717007850870</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="moved get_final_frame to ModifierManager.py">
+      <option name="closed" value="true" />
+      <created>1717009344210</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1717009344210</updated>
+    </task>
+    <task id="LOCAL-00061" summary="updated comments">
+      <option name="closed" value="true" />
+      <created>1717009615645</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1717009615645</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -552,8 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="successful image" />
-    <MESSAGE value="camera setter object" />
     <MESSAGE value="typo" />
     <MESSAGE value="removed static box_dim" />
     <MESSAGE value="resolved all TODOs" />
@@ -577,6 +578,8 @@
     <MESSAGE value="removed global var: box_dim and instead added functions to cope" />
     <MESSAGE value="camera shift logic works now, but only produces one frame" />
     <MESSAGE value="Camera setter is now generic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Camera setter is now generic" />
+    <MESSAGE value="moved get_final_frame to ModifierManager.py" />
+    <MESSAGE value="updated comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated comments" />
   </component>
 </project>

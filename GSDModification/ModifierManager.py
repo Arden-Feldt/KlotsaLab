@@ -19,23 +19,17 @@ def check_write(gsd):
 
 
 def get_x_box_dim(input_gsd):
-    # Open the GSD file
     with gsd.hoomd.open(name=input_gsd, mode="r") as file:
-        # Iterate over each frame in the file
         for frame_index, frame in enumerate(file):
-            # Get the box dimensions
             box = frame.configuration.box
-            return box[0]
+            return box[0]  # x value
 
 
 def get_y_box_dim(input_gsd):
-    # Open the GSD file
     with gsd.hoomd.open(name=input_gsd, mode="r") as file:
-        # Iterate over each frame in the file
         for frame_index, frame in enumerate(file):
-            # Get the box dimensions
             box = frame.configuration.box
-            return box[1]
+            return box[1]  # y value
 
 
 def get_final_frame(gsd_file):

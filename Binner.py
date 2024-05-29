@@ -8,10 +8,10 @@ class Binner:
         self.num_bins = num_bins
         self.highlight_bin_list = highlight_bin_list
 
-    def optimize_binning(self, x_dim, y_dim):
+    def bin_function(self, x_dim, y_dim):
         """Used to create complex images in simulation by cutting it into manageable bins - assigns names"""
 
-        print("started opt-binning")
+        print("started binning")
 
         particle_names = {}
 
@@ -31,18 +31,6 @@ class Binner:
             particle_name = 1 if current_bin in self.highlight_bin_list else 0
             particle_names[particle_idx] = particle_name
 
-        print("finished opt-binning")
+        print("finished binning")
         return particle_names
 
-    '''
-    def particle_namer(self, frame):
-        """Splits the simulation down the middle - used for testing"""
-        # Splits the simulation down the middle by the last frame
-        for particle_idx in range(frame.particles.N):
-            particle_position = frame.particles.position[particle_idx]
-            # Generate particle name based on the condition
-            particle_name = 1 if particle_position[0] >= 0 else 0
-            # Store the particle name in the dictionary
-            particle_names[particle_idx] = particle_name
-        return particle_names
-    '''

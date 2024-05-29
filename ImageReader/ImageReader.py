@@ -20,7 +20,7 @@ class ImageReader:
         # get image dimensions and assign bin sizes
         width, height = image.size
 
-        print("width: ", width, "\nheight: ", height)
+        print("image width: ", width, "\nimage height: ", height)
 
         x_bin_size = int(width / self.num_bins)
         y_bin_size = int(height / self.num_bins)

@@ -4,15 +4,17 @@ import os
 import gsd.hoomd
 
 import Binner
-from GSDModification.ModifierManager import get_x_box_dim, get_y_box_dim
+from GSDModification.ModifierManager import get_x_box_dim, get_y_box_dim, get_final_frame
 from ImageReader import ImageReader
 
 
 class Renderer:
     def __init__(self, input_gsd, output_gsd, num_bins, image_path, image_frame):
 
+        # confirms at least some of the parameters are what it expects
         self.validate_inputs(input_gsd, output_gsd, num_bins, image_path, image_frame)
 
+        # constructor
         self.input_gsd = input_gsd
         self.output_gsd = output_gsd
         self.num_bins = num_bins
@@ -35,10 +37,13 @@ class Renderer:
                     image_reader = ImageReader.ImageReader(self.image_path, self.num_bins)
                     colorlist = image_reader.read()
                     bin_list = image_reader.color_to_binlist(colorlist)
+
+                    # creates a little preview of your drawing
                     image_reader.visualise_colorlist(colorlist)
 
+                    # updates a list of particle names to reflect the colors assigned by bin
                     binner = Binner.Binner(frame, self.num_bins, bin_list)
-                    p_names = binner.optimize_binning(get_x_box_dim(self.input_gsd), get_y_box_dim(self.input_gsd))
+                    p_names = binner.bin_function(get_x_box_dim(self.input_gsd), get_y_box_dim(self.input_gsd))
 
             print("started gsd build")
 
@@ -63,7 +68,6 @@ class Renderer:
         for particle_index in range(temp_frame.particles.N):
             # checks there are enough names for the particles
             if temp_frame.particles.N != len(p_names):
-                print("Fucked up")
                 raise Exception("renderer.id_update(): number of particles and number of names didn't match!")
 
             # Retrieve the particle name from the dictionary
@@ -100,4 +104,3 @@ class Renderer:
 
         return True
 
-    # create a binging method
