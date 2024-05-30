@@ -1,0 +1,10 @@
+This is where you should put your .gsd files.
+
+DO NOT ADD GSD FILES TO GIT
+DO NOT COMMIT GSD FILES
+
+gsd files are far to large to push, and the clean up is annoying.
+
+Put all your inevitably mega-colossal gsd files here and then just gitignore this directory.
+
+<3 01000001 01000110
