@@ -65,5 +65,5 @@ Checks if you can write to a specific .gsd. This should always return true, but 
 
 #### CameraSetter.py
 Often the cluster formed in these simulations are not in the middle of the frame. This function lets you specify a shift right and up, so you can center the cluster. Each simulation will need a different offset. Particles pushed outside of the enviornment wrap around the other side. To properly specify the offset you must know the box dimensions of your simulation, which you can see with get_x_box_dim() and get_y_box_dim(). The dimensions should be the same (to my knowledge), but just in case they are not my code takes that into account. For example my box dimensions were around 361.
-
-
+## 
+*1000001 01000110*
