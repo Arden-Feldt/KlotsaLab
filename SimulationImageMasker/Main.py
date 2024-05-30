@@ -1,6 +1,5 @@
 import Renderer
-from GSDModification.ModifierManager import set_camera, copy_gsd, check_write, get_x_box_dim, get_y_box_dim, \
-    get_final_frame
+from GSDModification.ModifierManager import get_final_frame
 
 # Where you pass in all relevant information to create the visual
 if __name__ == '__main__':

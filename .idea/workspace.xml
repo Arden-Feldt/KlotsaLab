@@ -8,10 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="updated comments">
-      <change beforePath="$PROJECT_DIR$/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GSDModification/ModifierManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/GSDModification/ModifierManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageReader/ImageReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Renderer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Renderer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +73,7 @@
       <recent name="$PROJECT_DIR$/GSDs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SimulationImageMasker" />
       <recent name="$PROJECT_DIR$/GSDs" />
       <recent name="$PROJECT_DIR$/GSDModification" />
     </key>
@@ -117,7 +118,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulationImageMasker/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,14 +148,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00013" summary="annotated binfunction">
-      <option name="closed" value="true" />
-      <created>1712350662187</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1712350662187</updated>
     </task>
     <task id="LOCAL-00014" summary="ran with 100 bins">
       <option name="closed" value="true" />
@@ -540,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717009615645</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="updated comments">
+      <option name="closed" value="true" />
+      <created>1717010616752</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1717010616752</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

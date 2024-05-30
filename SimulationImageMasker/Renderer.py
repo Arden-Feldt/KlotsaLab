@@ -3,7 +3,7 @@ import os
 
 import gsd.hoomd
 
-import Binner
+from SimulationImageMasker import Binner
 from GSDModification.ModifierManager import get_x_box_dim, get_y_box_dim, get_final_frame
 from ImageReader import ImageReader
 
