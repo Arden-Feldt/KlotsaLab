@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="moved project to its own folder">
-      <change afterPath="$PROJECT_DIR$/GSDs/gsdFile" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="updated README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,30 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00015" summary="added java image reader (not working)">
-      <option name="closed" value="true" />
-      <created>1712425030635</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1712425030635</updated>
-    </task>
-    <task id="LOCAL-00016" summary="cleaned up with more directories">
-      <option name="closed" value="true" />
-      <created>1712425349675</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1712425349675</updated>
-    </task>
-    <task id="LOCAL-00017" summary="removed java files">
-      <option name="closed" value="true" />
-      <created>1712433470790</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1712433470790</updated>
     </task>
     <task id="LOCAL-00018" summary="ignore update">
       <option name="closed" value="true" />
@@ -538,7 +515,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717083479380</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1717083947855</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1717083947855</updated>
+    </task>
+    <task id="LOCAL-00065" summary="added gsd guide in proper directory">
+      <option name="closed" value="true" />
+      <created>1717083964158</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1717083964158</updated>
+    </task>
+    <task id="LOCAL-00066" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1717084037275</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1717084037275</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -553,8 +554,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed static box_dim" />
-    <MESSAGE value="resolved all TODOs" />
     <MESSAGE value="commented out setter and doubled bins" />
     <MESSAGE value="added todos" />
     <MESSAGE value="updated local git email" />
@@ -578,6 +577,8 @@
     <MESSAGE value="moved get_final_frame to ModifierManager.py" />
     <MESSAGE value="updated comments" />
     <MESSAGE value="moved project to its own folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved project to its own folder" />
+    <MESSAGE value="added gsd guide in proper directory" />
+    <MESSAGE value="updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated README.md" />
   </component>
 </project>
