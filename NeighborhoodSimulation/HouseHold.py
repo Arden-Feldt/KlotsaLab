@@ -12,8 +12,6 @@ class HouseHold:
         else:
             self.tolerance = 8  # or 0, unsure rn
 
-
-
     def show_type(self):
         if self.empty_lot:
             return " "
@@ -22,4 +20,20 @@ class HouseHold:
         else:
             return "\U000025FC"
 
+    def get_tolerance(self):
+        return self.tolerance
+
+    def check_non_major(self):
+        if self.empty_lot:
+            return False
+        elif self.is_majority:
+            return False
+        else:
+            return True
+
+    def set_sold(self, bool):
+        self.for_sale = bool
+
+    def get_sold(self):
+        return self.for_sale
 

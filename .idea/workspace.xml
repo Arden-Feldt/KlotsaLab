@@ -7,12 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="moved image reader inside sim directory">
-      <change afterPath="$PROJECT_DIR$/WhiteFlight/FlightSimulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WhiteFlight/HouseHold.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WhiteFlight/Neighborhood.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="flight set up and base functionality">
+      <change afterPath="$PROJECT_DIR$/NeighborhoodSimulation/Cycle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lowresFinalVisual.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/lowresFinalVisual.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhiteFlight/FlightSimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeighborhoodSimulation/FlightSimulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhiteFlight/HouseHold.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeighborhoodSimulation/HouseHold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WhiteFlight/Neighborhood.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeighborhoodSimulation/Neighborhood.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
     "Application.ImageReader.executor": "Run",
     "Application.Main.executor": "Run",
     "Python.CameraSetter.executor": "Run",
+    "Python.FlightSimulator (1).executor": "Run",
     "Python.FlightSimulator.executor": "Run",
     "Python.GSD_name_to_id.executor": "Run",
     "Python.ImageReader.executor": "Run",
@@ -80,7 +81,7 @@
       <recent name="$PROJECT_DIR$/GSDModification" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.FlightSimulator">
+  <component name="RunManager" selected="Python.FlightSimulator (1)">
     <configuration name="ImageReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ImageReader.ImageReader.src.ImageReader" />
       <module name="pythonProject1" />
@@ -106,6 +107,28 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="FlightSimulator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NeighborhoodSimulation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeighborhoodSimulation/FlightSimulator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="FlightSimulator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
@@ -153,6 +176,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.FlightSimulator (1)" />
         <item itemvalue="Python.FlightSimulator" />
         <item itemvalue="Python.Main" />
       </list>
@@ -173,14 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Super better organized everything, ImageReader.py returned inverse to bin_num rectangle">
-      <option name="closed" value="true" />
-      <created>1712438264364</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1712438264364</updated>
     </task>
     <task id="LOCAL-00020" summary="Fixed ImageReader.py for all white">
       <option name="closed" value="true" />
@@ -566,7 +582,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717358336981</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="flight set up and base functionality">
+      <option name="closed" value="true" />
+      <created>1717377636605</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1717377636605</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -581,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added todos" />
     <MESSAGE value="updated local git email" />
     <MESSAGE value="fixed camera" />
     <MESSAGE value="Added in run system.out annotations" />
@@ -606,6 +629,7 @@
     <MESSAGE value="added gsd guide in proper directory" />
     <MESSAGE value="updated README.md" />
     <MESSAGE value="moved image reader inside sim directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved image reader inside sim directory" />
+    <MESSAGE value="flight set up and base functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="flight set up and base functionality" />
   </component>
 </project>
