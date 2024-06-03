@@ -37,3 +37,6 @@ class HouseHold:
     def get_sold(self):
         return self.for_sale
 
+    def get_empty(self):
+        return self.empty_lot
+

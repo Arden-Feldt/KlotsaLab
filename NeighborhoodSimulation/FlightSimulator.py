@@ -9,7 +9,9 @@ def main():
     # populate it
     neighborhood.populate_neighborhood()
 
-    # while neighborhood.get_percent_majority() > 50:
+    while neighborhood.get_percent_majority() > 50:
+        cycle.run_cycle(neighborhood)
+
     cycle.run_cycle(neighborhood)
 
 

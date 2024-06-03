@@ -13,5 +13,7 @@ class Cycle:
 
         neighborhood.move_out()
 
+        neighborhood.generate_fill()
+
         neighborhood.repopulate_sold()
 

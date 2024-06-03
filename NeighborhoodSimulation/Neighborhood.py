@@ -57,7 +57,8 @@ class Neighborhood:
                             non_major_neighbor += 1
 
                 # diff
-                if self.neighborhood[i][j].get_tolerance() < non_major_neighbor:
+                if self.neighborhood[i][j].get_tolerance() < non_major_neighbor and self.neighborhood[i][
+                                                                                        j].get_empty == False:
                     return self.neighborhood[i][j].set_sold(True)
 
     def biased_random_boolean(self, bias=0.5):
@@ -81,5 +82,12 @@ class Neighborhood:
                             False,
                             False))
 
-
-
+    def generate_fill(self):
+        for i, row in enumerate(self.neighborhood):
+            for j in range(len(row)):
+                self.neighborhood[i][j] = (
+                    HouseHold.HouseHold(
+                        random.randint(1, 8),
+                        False,
+                        False,
+                        False))
