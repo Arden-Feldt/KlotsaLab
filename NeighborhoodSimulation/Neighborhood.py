@@ -14,10 +14,10 @@ class Neighborhood:
             for j in range(len(row)):
                 self.neighborhood[i][j] = (
                     HouseHold.HouseHold(
-                        8,
+                        random.randint(1, 8),
                         self.biased_random_boolean(self.majority_percent),
                         False,
-                        False))
+                        self.biased_random_boolean(self.empty_lot_per)))
 
     def get_neighborhood(self):
         return self.neighborhood
@@ -76,7 +76,7 @@ class Neighborhood:
                 if self.neighborhood[i][j].get_sold():
                     self.neighborhood[i][j] = (
                         HouseHold.HouseHold(
-                            8,
+                            random.randint(1, 8),
                             self.biased_random_boolean(self.majority_percent),
                             False,
                             False))
