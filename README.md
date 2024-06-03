@@ -23,10 +23,10 @@ You need the following to have this work properly
 ## Class Descriptors
 
 ### Main.py
-Once you're happy with the parameters you pass into Renderer(), just run everything from here. Additionally there are three commented out utility functions that can be very useful, more on those later. The process should finish well within five minutes, if it doesn't something is wrong.
+Once you're happy with the parameters you pass into Renderer(), just run everything from here. Additionally there are three commented out utility functions that can be very useful, more on those later. The process should finish well within two minutes.
 
 ### Renderer.py
-This class does most of the heavy lifting. It'll call other functions to read in your selected image (ImageReader.py), bin up your simulation, and then assign particle id's to each bin per the selected image(Binner.py). Then it'll build the new .gsd, this should take the longest of any part of the rendering process, about 2 minutes.
+This class does most of the heavy lifting. It'll call other functions to read in your selected image (ImageReader.py), bin up your simulation, and then assign particle id's to each bin per the selected image(Binner.py). Then it'll build the new .gsd, this should take the longest of any part of the rendering process, about a minute.
 
 #### Renderer takes in the following parameters, and its crucial you understand them.
 * input_gsd
@@ -58,12 +58,12 @@ Reads in a black and white .jpeg and returns an array that will line up with the
 Inside this directory are three files that each provide small utility tasks that were helpful to me while I was at the lab. These can often take a while so let them chug. There are also some utility functions in here, like get_x_box_dim() and get_y_box_dim().
 
 #### GSDCopier.py
-Takes in an input .gsd and copies it frame by frame to the output .gsd. Useful for when you corrupt or mangle a file. Always have a backup of whatever simulation you are working on saves somewhere far away from your program.
+Takes in an input .gsd and copies it frame by frame to the output .gsd. Useful for when you corrupt or mangle a file. Always have a backup of whatever simulation you are working on saves somewhere far away from your program. GSDCopier.py should finish in less then 5 seconds for a 2 GB gsd.
 
 #### RWgsdChecker.py
 Checks if you can write to a specific .gsd. This should always return true, but its useful in niche troubleshooting situations.
 
 #### CameraSetter.py
-Often the cluster formed in these simulations are not in the middle of the frame. This function lets you specify a shift right and up, so you can center the cluster. Each simulation will need a different offset. Particles pushed outside of the enviornment wrap around the other side. To properly specify the offset you must know the box dimensions of your simulation, which you can see with get_x_box_dim() and get_y_box_dim(). The dimensions should be the same (to my knowledge), but just in case they are not my code takes that into account. For example my box dimensions were around 361.
+Often the cluster formed in these simulations are not in the middle of the frame. This function lets you specify a shift right and up, so you can center the cluster. Each simulation will need a different offset. Particles pushed outside of the enviornment wrap around the other side. To properly specify the offset you must know the box dimensions of your simulation, which you can see with get_x_box_dim() and get_y_box_dim(). The dimensions should be the same (to my knowledge), but just in case they are not my code takes that into account. For example my box dimensions were around 361. CameraSetter.py is not optimized and super computationally expensive, so it can take a bit.
 ## 
 *01000001 01000110*
