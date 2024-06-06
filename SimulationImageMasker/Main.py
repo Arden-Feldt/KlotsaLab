@@ -23,7 +23,11 @@ if __name__ == '__main__':
 
     renderer.gsd_render()
 
-    # TODO: make three color varients
+    # TODO: add column of continious values to make black and white image with new binner
+    # TODO: alternativly loop through particles
+    # TODO: implement with color coding in Ovito
+
+
     # TODO: put a thin boundry around particles
     # TODO: read general info/grants/crowdspecific/ UNC SEED
     # TODO: app applications
@@ -31,6 +35,4 @@ if __name__ == '__main__':
         # bluetooth finder
         # walking traffic in a city
         # not lose your running group sataliet
-
-    # TODO: Simulate white flight
 

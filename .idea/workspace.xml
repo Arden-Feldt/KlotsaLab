@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="things work but arnt all implemented">
-      <change beforePath="$PROJECT_DIR$/NeighborhoodSimulation/Cycle.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeighborhoodSimulation/Cycle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeighborhoodSimulation/FlightSimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeighborhoodSimulation/FlightSimulator.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="object orient">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
       <recent name="$PROJECT_DIR$/GSDModification" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.FlightSimulator (1)">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="ImageReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ImageReader.ImageReader.src.ImageReader" />
       <module name="pythonProject1" />
@@ -173,9 +173,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.FlightSimulator (1)" />
         <item itemvalue="Python.FlightSimulator" />
-        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -194,22 +194,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00024" summary="fixed formatting in main">
-      <option name="closed" value="true" />
-      <created>1715623612677</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1715623612677</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Added object orientation">
-      <option name="closed" value="true" />
-      <created>1715878792054</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1715878792054</updated>
     </task>
     <task id="LOCAL-00026" summary="Added class and __init__">
       <option name="closed" value="true" />
@@ -587,7 +571,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717695753655</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="base case runs">
+      <option name="closed" value="true" />
+      <created>1717696683947</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1717696683947</updated>
+    </task>
+    <task id="LOCAL-00074" summary="object orient">
+      <option name="closed" value="true" />
+      <created>1717697579845</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1717697579845</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,8 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed unoptimized binning method" />
-    <MESSAGE value="made copier a proper class" />
     <MESSAGE value="render no longer writes to read only gsd" />
     <MESSAGE value="formatting" />
     <MESSAGE value="improved legibility" />
@@ -627,6 +625,8 @@
     <MESSAGE value="implemented empty lots" />
     <MESSAGE value="added hard stop, due to infa loop" />
     <MESSAGE value="things work but arnt all implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="things work but arnt all implemented" />
+    <MESSAGE value="base case runs" />
+    <MESSAGE value="object orient" />
+    <option name="LAST_COMMIT_MESSAGE" value="object orient" />
   </component>
 </project>
