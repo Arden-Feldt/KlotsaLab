@@ -14,7 +14,7 @@ class Neighborhood:
             for j in range(len(row)):
                 self.neighborhood[i][j] = (
                     HouseHold.HouseHold(
-                        random.randint(1, 8),
+                        1,
                         self.biased_random_boolean(self.majority_percent),
                         False,
                         self.biased_random_boolean(self.empty_lot_per)))
@@ -57,9 +57,8 @@ class Neighborhood:
                             non_major_neighbor += 1
 
                 # diff
-                if self.neighborhood[i][j].get_tolerance() < non_major_neighbor and self.neighborhood[i][
-                                                                                        j].get_empty == False:
-                    return self.neighborhood[i][j].set_sold(True)
+                if self.neighborhood[i][j].get_tolerance() < non_major_neighbor: # TODO: ignore empty lots
+                    self.neighborhood[i][j].set_sold(True)
 
     def biased_random_boolean(self, bias=0.5):
         """
@@ -71,6 +70,7 @@ class Neighborhood:
         """
         return random.choices([True, False], weights=[bias, 1 - bias], k=1)[0]
 
+    # TODO: Figure out why this isn't repoping sold houses
     def repopulate_sold(self):
         for i, row in enumerate(self.neighborhood):
             for j in range(len(row)):

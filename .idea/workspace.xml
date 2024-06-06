@@ -7,7 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="currently infa cycles and doesn't change neighborhood" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="added hard stop, due to infa loop">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeighborhoodSimulation/Cycle.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeighborhoodSimulation/Cycle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeighborhoodSimulation/FlightSimulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeighborhoodSimulation/FlightSimulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeighborhoodSimulation/Neighborhood.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeighborhoodSimulation/Neighborhood.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,22 +196,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Testing bugs, the bugs remain">
-      <option name="closed" value="true" />
-      <created>1713443473778</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1713443473778</updated>
-    </task>
-    <task id="LOCAL-00022" summary="updated names and documentation">
-      <option name="closed" value="true" />
-      <created>1715623415425</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1715623415425</updated>
     </task>
     <task id="LOCAL-00023" summary="xml">
       <option name="closed" value="true" />
@@ -584,7 +573,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717380091663</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="implemented empty lots">
+      <option name="closed" value="true" />
+      <created>1717380538247</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1717380538247</updated>
+    </task>
+    <task id="LOCAL-00071" summary="added hard stop, due to infa loop">
+      <option name="closed" value="true" />
+      <created>1717381428608</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1717381428608</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -599,8 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed camera" />
-    <MESSAGE value="Added in run system.out annotations" />
     <MESSAGE value="optimized binning" />
     <MESSAGE value="removed unoptimized binning method" />
     <MESSAGE value="made copier a proper class" />
@@ -624,6 +627,8 @@
     <MESSAGE value="moved image reader inside sim directory" />
     <MESSAGE value="flight set up and base functionality" />
     <MESSAGE value="currently infa cycles and doesn't change neighborhood" />
-    <option name="LAST_COMMIT_MESSAGE" value="currently infa cycles and doesn't change neighborhood" />
+    <MESSAGE value="implemented empty lots" />
+    <MESSAGE value="added hard stop, due to infa loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hard stop, due to infa loop" />
   </component>
 </project>

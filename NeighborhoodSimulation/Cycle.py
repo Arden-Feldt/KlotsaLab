@@ -1,19 +1,32 @@
 
 class Cycle:
 
-    def __init__(self):
+    def __init__(self, neighborhood):
         self.cycle_num = 0
+        self.neighborhood = neighborhood
 
-    def run_cycle(self, neighborhood):
+    def run_cycle(self):
         print("Starting Cycle: ", self.cycle_num)
         self.cycle_num += 1
-        print("The Neighborhood is ", neighborhood.get_percent_majority(), "% the majority group.")
+        print("The Neighborhood is ", self.neighborhood.get_percent_majority(), "% the majority group.")
 
-        neighborhood.print_neighborhood()
+        self.neighborhood.print_neighborhood()
 
-        neighborhood.move_out()
+        self.neighborhood.move_out()
 
-        neighborhood.generate_fill()
+        # neighborhood.generate_fill()
 
-        neighborhood.repopulate_sold()
+        self.neighborhood.repopulate_sold()
+
+    def cycle_still_going(self, neighborhood, old_neighborhood):
+        if neighborhood == old_neighborhood:
+            return False
+        return True
+
+    def get_cycle_num(self):
+        return self.cycle_num
+
+    def get_percent_majority_of_cycle(self):
+        self.neighborhood.get_percent_majority()
+
 
