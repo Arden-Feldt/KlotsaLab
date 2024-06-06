@@ -1,25 +1,35 @@
 from NeighborhoodSimulation import Neighborhood, Cycle
 
+class FlightSimulator:
 
-def main():
-    # Make neighborhood of size 10
-    neighborhood = Neighborhood.Neighborhood(10, .8, .05)
-    cycle = Cycle.Cycle(neighborhood)
+    def __init__(self):
+        print("innited")
 
-    # populate it
-    neighborhood.populate_neighborhood()
+    def run_x_simulations(self):
+        print("Start SIm")
+        # impl for loop
 
-    i = 0
-    maxcycles = 10000
-    percent_majority_over_time = [None] * maxcycles
+    def run_one_simulation(self):
+        # Make neighborhood of size 10
+        neighborhood = Neighborhood.Neighborhood(10, .8, .05)
+        cycle = Cycle.Cycle(neighborhood)
 
-    while neighborhood.get_percent_majority() > 50 and i < maxcycles:
-        percent_majority_over_time[i] = neighborhood.get_percent_majority()
-        cycle.run_cycle()
-        i += 1
+        # populate it
+        neighborhood.populate_neighborhood()
 
-    print(percent_majority_over_time)
+        i = 0
+        maxcycles = 10000
+        percent_majority_over_time = [None] * maxcycles
+
+        while neighborhood.get_percent_majority() > 50 and i < maxcycles:
+            percent_majority_over_time[i] = neighborhood.get_percent_majority()
+            cycle.run_cycle()
+            i += 1
+
+        print(percent_majority_over_time)
 
 
 if __name__ == "__main__":
-    main()
+    flight_simulator = FlightSimulator()
+
+    flight_simulator.run_one_simulation()
