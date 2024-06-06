@@ -26,7 +26,5 @@ class Cycle:
     def get_cycle_num(self):
         return self.cycle_num
 
-    def get_percent_majority_of_cycle(self):
-        self.neighborhood.get_percent_majority()
 
 
