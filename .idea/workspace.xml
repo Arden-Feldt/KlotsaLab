@@ -7,9 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="object orient">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="add todo to impl black and white">
+      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorValueWriter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
     "Application.ImageReader.executor": "Run",
     "Application.Main.executor": "Run",
     "Python.CameraSetter.executor": "Run",
+    "Python.Checker.executor": "Run",
     "Python.FlightSimulator (1).executor": "Run",
     "Python.FlightSimulator.executor": "Run",
     "Python.GSD_name_to_id.executor": "Run",
@@ -78,20 +80,7 @@
       <recent name="$PROJECT_DIR$/GSDModification" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
-    <configuration name="ImageReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ImageReader.ImageReader.src.ImageReader" />
-      <module name="pythonProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ImageReader.ImageReader.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Python.Checker">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ImageReader.ImageReader.src.Main" />
       <module name="pythonProject1" />
@@ -104,6 +93,28 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Checker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="FlightSimulator (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
@@ -173,6 +184,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Checker" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.FlightSimulator (1)" />
         <item itemvalue="Python.FlightSimulator" />
@@ -194,22 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Added class and __init__">
-      <option name="closed" value="true" />
-      <created>1715879785158</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1715879785158</updated>
-    </task>
-    <task id="LOCAL-00027" summary="cleaning up things">
-      <option name="closed" value="true" />
-      <created>1715879799129</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1715879799129</updated>
     </task>
     <task id="LOCAL-00028" summary="bugfixing (not complete)">
       <option name="closed" value="true" />
@@ -587,7 +583,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717697579845</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="add todo to impl black and white">
+      <option name="closed" value="true" />
+      <created>1717701674706</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1717701674706</updated>
+    </task>
+    <task id="LOCAL-00076" summary="add todo to impl black and white">
+      <option name="closed" value="true" />
+      <created>1717701912023</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1717701912023</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -602,7 +614,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="render no longer writes to read only gsd" />
     <MESSAGE value="formatting" />
     <MESSAGE value="improved legibility" />
     <MESSAGE value="massively optimized with one set" />
@@ -627,6 +638,7 @@
     <MESSAGE value="things work but arnt all implemented" />
     <MESSAGE value="base case runs" />
     <MESSAGE value="object orient" />
-    <option name="LAST_COMMIT_MESSAGE" value="object orient" />
+    <MESSAGE value="add todo to impl black and white" />
+    <option name="LAST_COMMIT_MESSAGE" value="add todo to impl black and white" />
   </component>
 </project>
