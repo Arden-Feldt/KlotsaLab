@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="added column checker util function">
-      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/TestingColor.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="scrapping adding custom attribute">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorValueWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorValueWriter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +81,7 @@
       <recent name="$PROJECT_DIR$/GSDModification" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.TestingColor">
+  <component name="RunManager" selected="Python.Checker">
     <configuration name="Checker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
@@ -194,9 +194,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TestingColor" />
         <item itemvalue="Python.Checker" />
         <item itemvalue="Python.Main" />
+        <item itemvalue="Python.TestingColor" />
         <item itemvalue="Python.FlightSimulator (1)" />
         <item itemvalue="Python.FlightSimulator" />
       </list>
@@ -217,14 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00030" summary="first successful pass">
-      <option name="closed" value="true" />
-      <created>1715886504018</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1715886504018</updated>
     </task>
     <task id="LOCAL-00031" summary="successful image">
       <option name="closed" value="true" />
@@ -610,7 +602,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717962908420</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="scrapping adding custom attribute">
+      <option name="closed" value="true" />
+      <created>1717963967246</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1717963967247</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -625,7 +625,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="massively optimized with one set" />
     <MESSAGE value="tuned to my satisfaction" />
     <MESSAGE value="renamed to main" />
     <MESSAGE value="added video" />
@@ -650,6 +649,7 @@
     <MESSAGE value="add todo to impl black and white" />
     <MESSAGE value="exo for color adding a custom value" />
     <MESSAGE value="added column checker util function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added column checker util function" />
+    <MESSAGE value="scrapping adding custom attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="scrapping adding custom attribute" />
   </component>
 </project>

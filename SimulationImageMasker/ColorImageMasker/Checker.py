@@ -5,4 +5,4 @@ if __name__ == '__main__':
     output_gsd = "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode/pythonProject1/GSDs/colorvalgsd.gsd"
     colorwriter = ColorValueWriter(input_gsd, output_gsd)
 
-    colorwriter.write()
+    colorwriter.write(0)
