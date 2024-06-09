@@ -7,10 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="add todo to impl black and white">
-      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorValueWriter.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="added column checker util function">
+      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/TestingColor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorValueWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorValueWriter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,7 @@
     "Python.Main.executor": "Run",
     "Python.Renderer.executor": "Run",
     "Python.Testing.executor": "Run",
+    "Python.TestingColor.executor": "Run",
     "Python.camera_set.executor": "Run",
     "Python.final_frame_id_lock.executor": "Run",
     "Python.gsd_populator.executor": "Run",
@@ -80,20 +81,7 @@
       <recent name="$PROJECT_DIR$/GSDModification" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Checker">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ImageReader.ImageReader.src.Main" />
-      <module name="pythonProject1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ImageReader.ImageReader.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Python.TestingColor">
     <configuration name="Checker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
@@ -182,8 +170,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="TestingColor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/TestingColor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestingColor" />
         <item itemvalue="Python.Checker" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.FlightSimulator (1)" />
@@ -206,22 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00028" summary="bugfixing (not complete)">
-      <option name="closed" value="true" />
-      <created>1715883055039</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1715883055039</updated>
-    </task>
-    <task id="LOCAL-00029" summary="bugfixing (not complete)">
-      <option name="closed" value="true" />
-      <created>1715883567623</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1715883567623</updated>
     </task>
     <task id="LOCAL-00030" summary="first successful pass">
       <option name="closed" value="true" />
@@ -599,7 +594,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717701912023</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="exo for color adding a custom value">
+      <option name="closed" value="true" />
+      <created>1717961353904</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1717961353905</updated>
+    </task>
+    <task id="LOCAL-00078" summary="added column checker util function">
+      <option name="closed" value="true" />
+      <created>1717962908420</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1717962908420</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -614,8 +625,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="formatting" />
-    <MESSAGE value="improved legibility" />
     <MESSAGE value="massively optimized with one set" />
     <MESSAGE value="tuned to my satisfaction" />
     <MESSAGE value="renamed to main" />
@@ -639,6 +648,8 @@
     <MESSAGE value="base case runs" />
     <MESSAGE value="object orient" />
     <MESSAGE value="add todo to impl black and white" />
-    <option name="LAST_COMMIT_MESSAGE" value="add todo to impl black and white" />
+    <MESSAGE value="exo for color adding a custom value" />
+    <MESSAGE value="added column checker util function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added column checker util function" />
   </component>
 </project>
