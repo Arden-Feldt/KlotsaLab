@@ -1,6 +1,7 @@
 import gsd
 
 from GSDModification import GSDCopier, CameraSetter, RWgsdChecker
+from GSDModification.ColumnChecker import ColumnChecker
 
 
 def copy_gsd(input_gsd, output_gsd):
@@ -36,6 +37,11 @@ def get_final_frame(gsd_file):
     with gsd.hoomd.open(name=gsd_file, mode='r') as file:
         # Get the number of frames
         return len(file)
+
+
+def print_columns(gsd_path):
+    printer = ColumnChecker(gsd_path)
+    printer.print_columns()
 
 
 class ModifierManager:
