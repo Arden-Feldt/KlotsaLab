@@ -35,7 +35,7 @@ class Renderer:
                 if frame_index == self.image_frame:
                     # Locks colors in accordance to image
                     image_reader = ImageReader.ImageReader(self.image_path, self.num_bins)
-                    colorlist = image_reader.read_grayscale()
+                    colorlist = image_reader.read()
                     bin_list = colorlist  # image_reader.color_to_binlist(colorlist)
 
                     # creates a little preview of your drawing
@@ -55,9 +55,6 @@ class Renderer:
                     if frame_index <= self.image_frame:
                         # Write the modified frame to the new GSD file
                         modified_file.append(self.id_update(frame, p_names))
-
-                    if frame_index == 0:
-                        self.print_type_ids(frame)
 
         print("finished gsd build")
 

@@ -7,9 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="moving to grayscale">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="non-functional grayscale implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Renderer.py" afterDir="false" />
     </list>
@@ -218,22 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00036" summary="commented out setter and doubled bins">
-      <option name="closed" value="true" />
-      <created>1715888360735</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1715888360735</updated>
-    </task>
-    <task id="LOCAL-00037" summary="added todos">
-      <option name="closed" value="true" />
-      <created>1715973197869</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1715973197869</updated>
     </task>
     <task id="LOCAL-00038" summary="updated local git email">
       <option name="closed" value="true" />
@@ -611,7 +594,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718037920023</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="added grayscale funtionality">
+      <option name="closed" value="true" />
+      <created>1718039605981</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1718039605981</updated>
+    </task>
+    <task id="LOCAL-00086" summary="non-functional grayscale implementation">
+      <option name="closed" value="true" />
+      <created>1718039623242</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1718039623242</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -626,8 +625,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed global var: box_dim and instead added functions to cope" />
-    <MESSAGE value="camera shift logic works now, but only produces one frame" />
     <MESSAGE value="Camera setter is now generic" />
     <MESSAGE value="moved get_final_frame to ModifierManager.py" />
     <MESSAGE value="updated comments" />
@@ -651,6 +648,8 @@
     <MESSAGE value="return to type-id as the move" />
     <MESSAGE value="created increased color mapping capability" />
     <MESSAGE value="moving to grayscale" />
-    <option name="LAST_COMMIT_MESSAGE" value="moving to grayscale" />
+    <MESSAGE value="added grayscale funtionality" />
+    <MESSAGE value="non-functional grayscale implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="non-functional grayscale implementation" />
   </component>
 </project>
