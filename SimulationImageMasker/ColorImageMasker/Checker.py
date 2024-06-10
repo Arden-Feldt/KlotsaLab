@@ -1,8 +1,13 @@
-from SimulationImageMasker.ColorImageMasker.ColorValueWriter import ColorValueWriter
+from matplotlib import pyplot as plt
+import numpy as np
+
+from SimulationImageMasker.ColorImageMasker.ColorMapGenerator import generate_colormap
 
 if __name__ == '__main__':
-    input_gsd = "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode/pythonProject1/GSDs/clone_of_modifile.gsd"
-    output_gsd = "/Users/ethan/feldt_dKlotsa_work/KlotsaPythonCode/pythonProject1/GSDs/colorvalgsd.gsd"
-    colorwriter = ColorValueWriter(input_gsd, output_gsd)
 
-    colorwriter.write(0)
+    N = 16
+    M = 7
+    H = np.arange(N * M).reshape([N, M])
+    fig = plt.figure(figsize=(10, 10))
+    ax = plt.pcolor(H, cmap=generate_colormap(N * M))
+    plt.show()
