@@ -7,9 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="last commit before i start to fuck with what works &lt;3">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="return to type-id as the move">
+      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorMapGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Renderer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,14 +220,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00033" summary="typo">
-      <option name="closed" value="true" />
-      <created>1715888068903</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1715888068903</updated>
     </task>
     <task id="LOCAL-00034" summary="removed static box_dim">
       <option name="closed" value="true" />
@@ -610,7 +605,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718033883836</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="return to type-id as the move">
+      <option name="closed" value="true" />
+      <created>1718035503831</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1718035503831</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -625,7 +628,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added video" />
     <MESSAGE value="validate user inputs now" />
     <MESSAGE value="making beginner friendly" />
     <MESSAGE value="removed global var: box_dim and instead added functions to cope" />
@@ -650,6 +652,7 @@
     <MESSAGE value="scrapping adding custom attribute" />
     <MESSAGE value="mimicing og masker" />
     <MESSAGE value="last commit before i start to fuck with what works &lt;3" />
-    <option name="LAST_COMMIT_MESSAGE" value="last commit before i start to fuck with what works &lt;3" />
+    <MESSAGE value="return to type-id as the move" />
+    <option name="LAST_COMMIT_MESSAGE" value="return to type-id as the move" />
   </component>
 </project>

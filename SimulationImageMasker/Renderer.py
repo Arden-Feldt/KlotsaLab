@@ -43,7 +43,7 @@ class Renderer:
 
                     # updates a list of particle names to reflect the colors assigned by bin
                     binner = Binner.Binner(frame, self.num_bins, bin_list)
-                    p_names = binner.bin_function(get_x_box_dim(self.input_gsd), get_y_box_dim(self.input_gsd))
+                    p_names = binner.grey_scale_bin(get_x_box_dim(self.input_gsd), get_y_box_dim(self.input_gsd))
 
             print("started gsd build")
 
