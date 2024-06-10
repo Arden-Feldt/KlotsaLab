@@ -53,12 +53,8 @@ class Binner:
             bin_index_y = np.searchsorted(bin_boundaries_y, particle_position[1], side='right') - 1
             current_bin = bin_index_x * self.num_bins + bin_index_y
 
-            # Normalize bin index to a value between 0 and 1
-            max_bin_index = (self.num_bins - 1) * self.num_bins + (self.num_bins - 1)
-            grey_value = current_bin / max_bin_index
-
-            # Assign the grey value to the particle
-            particle_names[particle_idx] = grey_value
+            particle_names[particle_idx] = self.highlight_bin_list[particle_idx]
+            # print(self.highlight_bin_list[particle_idx], end=' ')
 
         print("finished binning")
         return particle_names

@@ -35,8 +35,8 @@ class Renderer:
                 if frame_index == self.image_frame:
                     # Locks colors in accordance to image
                     image_reader = ImageReader.ImageReader(self.image_path, self.num_bins)
-                    colorlist = image_reader.read()
-                    bin_list = image_reader.color_to_binlist(colorlist)
+                    colorlist = image_reader.read_grayscale()
+                    bin_list = colorlist  # image_reader.color_to_binlist(colorlist)
 
                     # creates a little preview of your drawing
                     image_reader.visualise_colorlist(colorlist)
@@ -55,6 +55,9 @@ class Renderer:
                     if frame_index <= self.image_frame:
                         # Write the modified frame to the new GSD file
                         modified_file.append(self.id_update(frame, p_names))
+
+                    if frame_index == 0:
+                        self.print_type_ids(frame)
 
         print("finished gsd build")
 
@@ -103,4 +106,15 @@ class Renderer:
             print(f"The path '{path}' does not exist.")
 
         return True
+
+    def print_type_ids(self, frame):
+        """Just a sanity check"""
+        i = 0
+        for particle_index in range(frame.particles.N):
+            print(frame.particles.typeid[particle_index], end=' ')
+            i += 1
+            if i % self.num_bins == 0:
+                print("")
+        print("\nyou're not cwazy pookie")
+
 
