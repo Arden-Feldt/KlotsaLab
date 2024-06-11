@@ -11,8 +11,8 @@ if __name__ == '__main__':
 
     input_gsd = "GSDs/centered_gsd.gsd"                             # the gsd you'll read in and copy
     output_gsd = "GSDs/clone_of_modifile.gsd"                       # the gsd the program will make, update, and save
-    num_bins = 600                                                  # the # of bins on an axis, total bins = num_bins^2
-    image_path = "SimulationImageMasker/ImageReader/Images/clusterUNC.jpeg"  # Path to black & white image you're using
+    num_bins = 640                                                  # the # of bins on an axis, total bins = num_bins^2
+    image_path = "SimulationImageMasker/ImageReader/Images/klotsa_daphne.jpeg"  # Path to black & white image you're using
     image_frame = get_final_frame(input_gsd) - 1                    # Frame where the image comes together
 
     renderer = Renderer.Renderer(input_gsd,
@@ -25,8 +25,6 @@ if __name__ == '__main__':
 
     # TODO: put a thin boundry around particles
 
-
-    # TODO: add column of continious values to make black and white image with new binner
     # TODO: alternativly loop through particles
     # TODO: implement with color coding in Ovito
 
