@@ -35,7 +35,7 @@ class Renderer:
                 if frame_index == self.image_frame:
                     # Locks colors in accordance to image
                     image_reader = ImageReader.ImageReader(self.image_path, self.num_bins)
-                    colorlist = image_reader.read()
+                    colorlist = image_reader.read_grayscale()
                     bin_list = colorlist  # image_reader.color_to_binlist(colorlist)
 
                     # creates a little preview of your drawing
@@ -72,9 +72,8 @@ class Renderer:
 
             # Retrieve the particle name from the dictionary
             particle_name = p_names.get(particle_index)
-            if particle_name is not None:
-                # Set the typeid for the particle based on the name
-                temp_frame.particles.typeid[particle_index] = particle_name
+
+            temp_frame.particles.typeid[particle_index] = particle_name
 
         return temp_frame
 

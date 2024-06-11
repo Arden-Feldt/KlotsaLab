@@ -62,7 +62,7 @@ class ImageReader:
 
         # Open an image file
         image_path = self.path
-        image = Image.open(image_path)
+        image = Image.open(image_path).convert('L')  # Convert image to grayscale
         result = []
 
         # get image dimensions and assign bin sizes
@@ -76,8 +76,7 @@ class ImageReader:
         for x in range(0, width, x_bin_size):
             for y in range(0, height, y_bin_size):
                 pixel_value = image.getpixel((x, y))
-                gray_value = pixel_value[0]
-                normalized_value = gray_value  # / 255 # Normalize pixel value to range [0, 1]
+                normalized_value = pixel_value  # / 255 # Normalize pixel value to range [0, 1]
                 result.append(normalized_value)
 
         print("finished reading")

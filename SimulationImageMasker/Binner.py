@@ -28,6 +28,7 @@ class Binner:
             current_bin = bin_index_x * self.num_bins + bin_index_y
 
             # Name particle based on bin membership
+
             particle_name = 1 if current_bin in self.highlight_bin_list else 0
             particle_names[particle_idx] = particle_name
 
@@ -53,7 +54,7 @@ class Binner:
             bin_index_y = np.searchsorted(bin_boundaries_y, particle_position[1], side='right') - 1
             current_bin = bin_index_x * self.num_bins + bin_index_y
 
-            particle_names[particle_idx] = self.highlight_bin_list[particle_idx]
+            particle_names[particle_idx] = self.highlight_bin_list[current_bin]
             # print(self.highlight_bin_list[particle_idx], end=' ')
 
         print("finished binning")
