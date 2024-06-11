@@ -7,12 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="only creates one type-id/unclear why">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="pixel units update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Renderer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,22 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00039" summary="fixed camera">
-      <option name="closed" value="true" />
-      <created>1715980091071</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1715980091071</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Added in run system.out annotations">
-      <option name="closed" value="true" />
-      <created>1716228834701</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1716228834701</updated>
     </task>
     <task id="LOCAL-00041" summary="optimized binning">
       <option name="closed" value="true" />
@@ -612,7 +594,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718040828294</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="grayscale now works">
+      <option name="closed" value="true" />
+      <created>1718117207221</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1718117207221</updated>
+    </task>
+    <task id="LOCAL-00089" summary="pixel units update">
+      <option name="closed" value="true" />
+      <created>1718117241606</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1718117241606</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -627,8 +625,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved get_final_frame to ModifierManager.py" />
-    <MESSAGE value="updated comments" />
     <MESSAGE value="moved project to its own folder" />
     <MESSAGE value="added gsd guide in proper directory" />
     <MESSAGE value="updated README.md" />
@@ -652,6 +648,8 @@
     <MESSAGE value="added grayscale funtionality" />
     <MESSAGE value="non-functional grayscale implementation" />
     <MESSAGE value="only creates one type-id/unclear why" />
-    <option name="LAST_COMMIT_MESSAGE" value="only creates one type-id/unclear why" />
+    <MESSAGE value="grayscale now works" />
+    <MESSAGE value="pixel units update" />
+    <option name="LAST_COMMIT_MESSAGE" value="pixel units update" />
   </component>
 </project>

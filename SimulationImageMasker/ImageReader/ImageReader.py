@@ -7,7 +7,36 @@ class ImageReader:
         self.path = path
         self.num_bins = num_bins
 
-    def read(self):
+    def read_grayscale(self):
+        """Returns a list of values in [0, 1] for pixels in bins corresponding with if pixel in that bin was black"""
+
+        print("started reading")
+
+        # Open an image file
+        image_path = self.path
+        image = Image.open(image_path).convert('L')  # Convert image to grayscale
+
+        result = []
+
+        # get image dimensions and assign bin sizes
+        width, height = image.size
+
+        print("image width: ", width, "\nimage height: ", height)
+
+        x_bin_size = int(width / self.num_bins)
+        y_bin_size = int(height / self.num_bins)
+
+        for x in range(0, width, x_bin_size):
+            for y in range(0, height, y_bin_size):
+                pixel_value = image.getpixel((x, y))
+                normalized_value = pixel_value  # / 255 # Normalize pixel value to range [0, 1]
+                result.append(normalized_value)
+
+        print("finished reading")
+
+        return result
+
+    def read_black_and_white(self):
         """Returns a list of 1s and 0s for pixels in bins depending on if the selected pixel in that bin was black"""
 
         print("started reading")
@@ -54,31 +83,3 @@ class ImageReader:
             i += 1
             if i % self.num_bins == 0:
                 print("")
-
-    def read_grayscale(self):
-        """Returns a list of values in [0, 1] for pixels in bins corresponding with if pixel in that bin was black"""
-
-        print("started reading")
-
-        # Open an image file
-        image_path = self.path
-        image = Image.open(image_path).convert('L')  # Convert image to grayscale
-        result = []
-
-        # get image dimensions and assign bin sizes
-        width, height = image.size
-
-        print("image width: ", width, "\nimage height: ", height)
-
-        x_bin_size = int(width / self.num_bins)
-        y_bin_size = int(height / self.num_bins)
-
-        for x in range(0, width, x_bin_size):
-            for y in range(0, height, y_bin_size):
-                pixel_value = image.getpixel((x, y))
-                normalized_value = pixel_value  # / 255 # Normalize pixel value to range [0, 1]
-                result.append(normalized_value)
-
-        print("finished reading")
-
-        return result
