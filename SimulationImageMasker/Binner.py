@@ -35,14 +35,13 @@ class Binner:
 
     def black_and_white_bin(self, x_dim, y_dim):
         """Used to create complex images in simulation by cutting it into manageable bins - assigns names"""
-
         print("started binning")
 
         particle_names = {}
 
         # Pre-calculate bin boundaries
-        bin_boundaries_x = np.arange(-x_dim / 2, x_dim / 2, x_dim / self.num_bins)
-        bin_boundaries_y = np.arange(-y_dim / 2, y_dim / 2, y_dim / self.num_bins)
+        bin_boundaries_x = np.linspace(-x_dim / 2, x_dim / 2, self.num_bins + 1)
+        bin_boundaries_y = np.linspace(-y_dim / 2, y_dim / 2, self.num_bins + 1)
 
         for particle_idx in range(self.frame.particles.N):
             particle_position = self.frame.particles.position[particle_idx]
@@ -53,12 +52,12 @@ class Binner:
             current_bin = bin_index_x * self.num_bins + bin_index_y
 
             # Name particle based on bin membership
-
             particle_name = 1 if current_bin in self.highlight_bin_list else 0
             particle_names[particle_idx] = particle_name
 
         print("finished binning")
         return particle_names
+
 
 
 

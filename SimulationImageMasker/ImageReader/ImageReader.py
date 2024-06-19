@@ -43,7 +43,7 @@ class ImageReader:
 
         # Open an image file
         image_path = self.path
-        image = Image.open(image_path)
+        image = Image.open(image_path).convert('1')
         result = []
 
         # get image dimensions and assign bin sizes

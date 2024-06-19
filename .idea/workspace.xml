@@ -7,14 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="klotsa image run">
-      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/RaviColorReader.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="added read color">
+      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/BlackWhiteRenderer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/Checker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorMapGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/ColorMapGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorValueWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/ColorValueWriter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/TestingColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/TestingColor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +77,7 @@
       <recent name="$PROJECT_DIR$/GSDs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SimulationImageMasker/ImageReader/Images" />
       <recent name="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard" />
       <recent name="$PROJECT_DIR$/SimulationImageMasker" />
       <recent name="$PROJECT_DIR$/GSDs" />
@@ -222,46 +220,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00043" summary="made copier a proper class">
-      <option name="closed" value="true" />
-      <created>1716231075389</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1716231075389</updated>
-    </task>
-    <task id="LOCAL-00044" summary="improved legibility">
-      <option name="closed" value="true" />
-      <created>1716233265493</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1716233265493</updated>
-    </task>
-    <task id="LOCAL-00045" summary="render no longer writes to read only gsd">
-      <option name="closed" value="true" />
-      <created>1716311004340</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1716311004340</updated>
-    </task>
-    <task id="LOCAL-00046" summary="formatting">
-      <option name="closed" value="true" />
-      <created>1716311674156</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1716311674156</updated>
-    </task>
-    <task id="LOCAL-00047" summary="improved legibility">
-      <option name="closed" value="true" />
-      <created>1716312064890</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1716312064890</updated>
     </task>
     <task id="LOCAL-00048" summary="massively optimized with one set">
       <option name="closed" value="true" />
@@ -615,7 +573,47 @@
       <option name="project" value="LOCAL" />
       <updated>1718118204475</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Added Ravi Color Code">
+      <option name="closed" value="true" />
+      <created>1718825833051</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1718825833051</updated>
+    </task>
+    <task id="LOCAL-00093" summary="moved to trash file">
+      <option name="closed" value="true" />
+      <created>1718825847831</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1718825847831</updated>
+    </task>
+    <task id="LOCAL-00094" summary="renamed file">
+      <option name="closed" value="true" />
+      <created>1718825896653</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1718825896653</updated>
+    </task>
+    <task id="LOCAL-00095" summary="imple grayscale reader">
+      <option name="closed" value="true" />
+      <created>1718826065838</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1718826065838</updated>
+    </task>
+    <task id="LOCAL-00096" summary="added read color">
+      <option name="closed" value="true" />
+      <created>1718826105266</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1718826105266</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -630,11 +628,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated README.md" />
-    <MESSAGE value="moved image reader inside sim directory" />
-    <MESSAGE value="flight set up and base functionality" />
-    <MESSAGE value="currently infa cycles and doesn't change neighborhood" />
-    <MESSAGE value="implemented empty lots" />
     <MESSAGE value="added hard stop, due to infa loop" />
     <MESSAGE value="things work but arnt all implemented" />
     <MESSAGE value="base case runs" />
@@ -655,6 +648,11 @@
     <MESSAGE value="pixel units update" />
     <MESSAGE value="cleaning up class functions" />
     <MESSAGE value="klotsa image run" />
-    <option name="LAST_COMMIT_MESSAGE" value="klotsa image run" />
+    <MESSAGE value="Added Ravi Color Code" />
+    <MESSAGE value="moved to trash file" />
+    <MESSAGE value="renamed file" />
+    <MESSAGE value="imple grayscale reader" />
+    <MESSAGE value="added read color" />
+    <option name="LAST_COMMIT_MESSAGE" value="added read color" />
   </component>
 </project>
