@@ -1,4 +1,4 @@
-import Renderer
+import GrayscaleRenderer
 from GSDModification.ModifierManager import get_final_frame, copy_gsd, set_camera, check_write
 
 # Where you pass in all relevant information to create the visual
@@ -15,7 +15,7 @@ if __name__ == '__main__':
     image_path = "SimulationImageMasker/ImageReader/Images/klotsa_daphne.jpeg"  # Path to black & white image you're using
     image_frame = get_final_frame(input_gsd) - 1                    # Frame where the image comes together
 
-    renderer = Renderer.Renderer(input_gsd,
+    renderer = GrayscaleRenderer.GrayscaleRenderer(input_gsd,
                                  output_gsd,
                                  num_bins,
                                  image_path,
