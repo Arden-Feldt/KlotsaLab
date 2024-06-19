@@ -8,7 +8,7 @@ from GSDModification.ModifierManager import get_x_box_dim, get_y_box_dim, get_fi
 from ImageReader import ImageReader
 
 
-class Renderer:
+class GrayscaleRenderer:
     def __init__(self, input_gsd, output_gsd, num_bins, image_path, image_frame):
 
         # confirms at least some of the parameters are what it expects
