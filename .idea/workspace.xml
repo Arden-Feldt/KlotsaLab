@@ -7,10 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="pixel units update">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="klotsa image run">
+      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/RaviColorReader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/Checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorMapGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/ColorMapGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/ColorValueWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/ColorValueWriter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/TestingColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/TestingColor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/ImageReader/ImageReader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +80,7 @@
       <recent name="$PROJECT_DIR$/GSDs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard" />
       <recent name="$PROJECT_DIR$/SimulationImageMasker" />
       <recent name="$PROJECT_DIR$/GSDs" />
       <recent name="$PROJECT_DIR$/GSDModification" />
@@ -95,7 +100,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Checker.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/Checker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,7 +188,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/TestingColor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard/TestingColor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,22 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00041" summary="optimized binning">
-      <option name="closed" value="true" />
-      <created>1716229990939</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1716229990939</updated>
-    </task>
-    <task id="LOCAL-00042" summary="removed unoptimized binning method">
-      <option name="closed" value="true" />
-      <created>1716230043531</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1716230043531</updated>
     </task>
     <task id="LOCAL-00043" summary="made copier a proper class">
       <option name="closed" value="true" />
@@ -610,7 +599,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718117241606</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="cleaning up class functions">
+      <option name="closed" value="true" />
+      <created>1718118168035</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1718118168035</updated>
+    </task>
+    <task id="LOCAL-00091" summary="klotsa image run">
+      <option name="closed" value="true" />
+      <created>1718118204475</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1718118204475</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -625,8 +630,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved project to its own folder" />
-    <MESSAGE value="added gsd guide in proper directory" />
     <MESSAGE value="updated README.md" />
     <MESSAGE value="moved image reader inside sim directory" />
     <MESSAGE value="flight set up and base functionality" />
@@ -650,6 +653,8 @@
     <MESSAGE value="only creates one type-id/unclear why" />
     <MESSAGE value="grayscale now works" />
     <MESSAGE value="pixel units update" />
-    <option name="LAST_COMMIT_MESSAGE" value="pixel units update" />
+    <MESSAGE value="cleaning up class functions" />
+    <MESSAGE value="klotsa image run" />
+    <option name="LAST_COMMIT_MESSAGE" value="klotsa image run" />
   </component>
 </project>

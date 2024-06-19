@@ -83,3 +83,36 @@ class ImageReader:
             i += 1
             if i % self.num_bins == 0:
                 print("")
+
+    from PIL import Image
+
+    def read_color(self):
+        """Returns three lists of values in [0, 255] for pixel color in bins corresponding with that pixel"""
+
+        print("started reading")
+
+        # Open an image file
+        image_path = self.path
+        image = Image.open(image_path).convert('RGB')  # Convert image to RGB
+
+        # Initialize lists for each color channel
+        red_values = []
+        green_values = []
+        blue_values = []
+
+        # Get image dimensions and assign bin sizes
+        width, height = image.size
+
+        print("image width: ", width, "\nimage height: ", height)
+
+        x_bin_size = int(width / self.num_bins)
+        y_bin_size = int(height / self.num_bins)
+
+        for x in range(0, width, x_bin_size):
+            for y in range(0, height, y_bin_size):
+                r, g, b = image.getpixel((x, y))
+                red_values.append(r)
+                green_values.append(g)
+                blue_values.append(b)
+
+        return red_values, green_values, blue_values
