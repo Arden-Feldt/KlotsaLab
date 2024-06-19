@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import numpy as np
 
-from SimulationImageMasker.ColorImageMasker.ColorMapGenerator import generate_colormap
+from SimulationImageMasker.ColorImageMasker.Graveyard.ColorMapGenerator import generate_colormap
 
 if __name__ == '__main__':
 
