@@ -7,7 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="moved unused work to graveyard">
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="added placeholder">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +57,7 @@
     "Python.camera_set.executor": "Run",
     "Python.final_frame_id_lock.executor": "Run",
     "Python.gsd_populator.executor": "Run",
+    "Python.placeholder.executor": "Run",
     "Python.renderer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -74,14 +76,14 @@
       <recent name="$PROJECT_DIR$/GSDs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Graveyard" />
       <recent name="$PROJECT_DIR$/ColorImageMasker" />
       <recent name="$PROJECT_DIR$/SimulationImageMasker/ImageReader/Images" />
       <recent name="$PROJECT_DIR$/SimulationImageMasker/ColorImageMasker/Graveyard" />
-      <recent name="$PROJECT_DIR$/SimulationImageMasker" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.placeholder">
     <configuration name="Checker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
@@ -118,28 +120,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeighborhoodSimulation/FlightSimulator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="FlightSimulator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WhiteFlight" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WhiteFlight/FlightSimulator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,13 +172,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="placeholder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="JointHoomD" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/JointHoomD" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JointHoomD/placeholder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.placeholder" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Checker" />
         <item itemvalue="Python.TestingColor" />
         <item itemvalue="Python.FlightSimulator (1)" />
-        <item itemvalue="Python.FlightSimulator" />
       </list>
     </recent_temporary>
   </component>
@@ -217,30 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00051" summary="added video">
-      <option name="closed" value="true" />
-      <created>1716317858231</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1716317858231</updated>
-    </task>
-    <task id="LOCAL-00052" summary="added video">
-      <option name="closed" value="true" />
-      <created>1716318398206</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1716318398206</updated>
-    </task>
-    <task id="LOCAL-00053" summary="added video">
-      <option name="closed" value="true" />
-      <created>1716318563627</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1716318563627</updated>
     </task>
     <task id="LOCAL-00054" summary="added video">
       <option name="closed" value="true" />
@@ -610,7 +588,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719932498956</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="added joint repo">
+      <option name="closed" value="true" />
+      <created>1719933250784</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1719933250784</updated>
+    </task>
+    <task id="LOCAL-00101" summary="added Neighborhood work">
+      <option name="closed" value="true" />
+      <created>1719933300358</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1719933300358</updated>
+    </task>
+    <task id="LOCAL-00102" summary="added placeholder">
+      <option name="closed" value="true" />
+      <created>1719933409292</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1719933409292</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -625,9 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="object orient" />
-    <MESSAGE value="add todo to impl black and white" />
-    <MESSAGE value="exo for color adding a custom value" />
     <MESSAGE value="added column checker util function" />
     <MESSAGE value="scrapping adding custom attribute" />
     <MESSAGE value="mimicing og masker" />
@@ -650,6 +649,9 @@
     <MESSAGE value="added seperate renderers" />
     <MESSAGE value="BW rend having infa bin" />
     <MESSAGE value="moved unused work to graveyard" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved unused work to graveyard" />
+    <MESSAGE value="added joint repo" />
+    <MESSAGE value="added Neighborhood work" />
+    <MESSAGE value="added placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="added placeholder" />
   </component>
 </project>
