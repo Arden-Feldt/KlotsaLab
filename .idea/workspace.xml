@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="project points to correct dependancy branch" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="project points to correct dependancy branch">
+      <change beforePath="$PROJECT_DIR$/JointHoomDWork" beforeDir="false" afterPath="$PROJECT_DIR$/JointHoomDWork" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,14 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00060" summary="moved get_final_frame to ModifierManager.py">
-      <option name="closed" value="true" />
-      <created>1717009344210</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009344210</updated>
     </task>
     <task id="LOCAL-00061" summary="updated comments">
       <option name="closed" value="true" />
@@ -610,7 +604,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719935479009</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="project points to correct dependancy branch">
+      <option name="closed" value="true" />
+      <created>1719935907532</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1719935907532</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
