@@ -7,8 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="project points to correct dependancy branch">
-      <change beforePath="$PROJECT_DIR$/JointHoomDWork" beforeDir="false" afterPath="$PROJECT_DIR$/JointHoomDWork" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="attempting pointing to main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,22 +219,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00061" summary="updated comments">
-      <option name="closed" value="true" />
-      <created>1717009615645</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1717009615645</updated>
-    </task>
-    <task id="LOCAL-00062" summary="updated comments">
-      <option name="closed" value="true" />
-      <created>1717010616752</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1717010616752</updated>
     </task>
     <task id="LOCAL-00063" summary="moved project to its own folder">
       <option name="closed" value="true" />
@@ -612,7 +596,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719935907532</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="attempting pointing to main">
+      <option name="closed" value="true" />
+      <created>1719936013995</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1719936013995</updated>
+    </task>
+    <task id="LOCAL-00111" summary="attempting pointing to main">
+      <option name="closed" value="true" />
+      <created>1719936137705</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1719936137705</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -628,7 +628,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="last commit before i start to fuck with what works &lt;3" />
     <MESSAGE value="return to type-id as the move" />
     <MESSAGE value="created increased color mapping capability" />
     <MESSAGE value="moving to grayscale" />
@@ -653,6 +652,7 @@
     <MESSAGE value="messed something up" />
     <MESSAGE value="added back the non-modal commit interface" />
     <MESSAGE value="project points to correct dependancy branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="project points to correct dependancy branch" />
+    <MESSAGE value="attempting pointing to main" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempting pointing to main" />
   </component>
 </project>
