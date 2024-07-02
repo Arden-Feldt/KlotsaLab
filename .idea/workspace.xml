@@ -7,11 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="added read color">
-      <change afterPath="$PROJECT_DIR$/SimulationImageMasker/BlackWhiteRenderer.py" afterDir="false" />
+    <list default="true" id="d953fd68-5048-438f-850f-86828e7af493" name="Changes" comment="BW rend having infa bin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Binner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimulationImageMasker/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimulationImageMasker/Main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,22 +217,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710784822082</updated>
-    </task>
-    <task id="LOCAL-00048" summary="massively optimized with one set">
-      <option name="closed" value="true" />
-      <created>1716313841137</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1716313841137</updated>
-    </task>
-    <task id="LOCAL-00049" summary="tuned to my satisfaction">
-      <option name="closed" value="true" />
-      <created>1716315544621</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1716315544621</updated>
     </task>
     <task id="LOCAL-00050" summary="renamed to main">
       <option name="closed" value="true" />
@@ -613,7 +594,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718826105266</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="added seperate renderers">
+      <option name="closed" value="true" />
+      <created>1718828408414</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1718828408414</updated>
+    </task>
+    <task id="LOCAL-00098" summary="BW rend having infa bin">
+      <option name="closed" value="true" />
+      <created>1718828461913</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1718828461913</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -628,8 +625,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added hard stop, due to infa loop" />
-    <MESSAGE value="things work but arnt all implemented" />
     <MESSAGE value="base case runs" />
     <MESSAGE value="object orient" />
     <MESSAGE value="add todo to impl black and white" />
@@ -653,6 +648,8 @@
     <MESSAGE value="renamed file" />
     <MESSAGE value="imple grayscale reader" />
     <MESSAGE value="added read color" />
-    <option name="LAST_COMMIT_MESSAGE" value="added read color" />
+    <MESSAGE value="added seperate renderers" />
+    <MESSAGE value="BW rend having infa bin" />
+    <option name="LAST_COMMIT_MESSAGE" value="BW rend having infa bin" />
   </component>
 </project>
