@@ -1,7 +1,7 @@
 # Arden Feldt's Klotsa Lab Work (2023-)
 The repository of work I've done as an undergraduate researcher with Klotsa Group.
 
-## Image Visualizer in Particle Simulations
+## Image Visualizer in Particle Simulations (SimulationImageMasker)
 This is currently the meat of the code in this project. When you run the main, this project paints a image of your choice (like a UNC logo) into a particle simulation (.gsd file). The design comes together at the end (or a frame of your choice), so you get to watch the particles move around until the image forms from the simulation. You can see what this looks like by downloading lowresFinalVisual.mp4. I've made a lot of changes to make sure its a generalized and friendly as possible, but if you stray to far from what I was originally doing you may have to patch up some edge cases. I've cleaned up every one I found while I worked at the lab.
 
 ## Prerequisites
